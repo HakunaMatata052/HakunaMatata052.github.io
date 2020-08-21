@@ -16,6 +16,21 @@
       </tags>
   </entry>
   <entry>
+    <title>一句代码解决bootstrap栅格几个设置5等分</title>
+    <url>/2019/01/04/bootstrap-offset/</url>
+    <content><![CDATA[<p>HTML<br><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-offset-1 col-xs-2 text-center"</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>番茄<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>石榴<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>芒果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>正常设置每个栅格2等分，最后会在末尾空余出2等分（共12等分），然后第一个栅格设置col-xs-offset-1，意思是偏移一格，等于把最后的2等分其中一份放在最前面了。<br>这样做可以解决bootstrap栅格5等分的问题，但是最终宽度会比正常窄，可以单独设置container的宽来解决。</p>
+]]></content>
+      <categories>
+        <category>HTML</category>
+        <category>BOOTSTRAP</category>
+      </categories>
+      <tags>
+        <tag>bootstrap</tag>
+        <tag>offset</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PNG格式小图标的CSS任意颜色赋色技术</title>
     <url>/2018/12/19/css3-add-color/</url>
     <content><![CDATA[<h3 id="PNG格式小图标的CSS任意颜色赋色技术"><a href="#PNG格式小图标的CSS任意颜色赋色技术" class="headerlink" title="PNG格式小图标的CSS任意颜色赋色技术"></a>PNG格式小图标的CSS任意颜色赋色技术</h3><p><code>**注意**：PC某些浏览器不支持，请勿使用，手机端可以使用</code></p>
@@ -36,21 +51,6 @@
       </categories>
       <tags>
         <tag>css3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一句代码解决bootstrap栅格几个设置5等分</title>
-    <url>/2019/01/04/bootstrap-offset/</url>
-    <content><![CDATA[<p>HTML<br><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-offset-1 col-xs-2 text-center"</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>番茄<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>石榴<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"col-xs-2 text-center"</span>&gt;</span>芒果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>正常设置每个栅格2等分，最后会在末尾空余出2等分（共12等分），然后第一个栅格设置col-xs-offset-1，意思是偏移一格，等于把最后的2等分其中一份放在最前面了。<br>这样做可以解决bootstrap栅格5等分的问题，但是最终宽度会比正常窄，可以单独设置container的宽来解决。</p>
-]]></content>
-      <categories>
-        <category>HTML</category>
-        <category>BOOTSTRAP</category>
-      </categories>
-      <tags>
-        <tag>bootstrap</tag>
-        <tag>offset</tag>
       </tags>
   </entry>
   <entry>
@@ -138,6 +138,31 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo添加置顶功能和标识</title>
+    <url>/2018/12/29/hexo-top/</url>
+    <content><![CDATA[<p>首先看下效果<br><img src="https://i.loli.net/2018/12/29/5c273ed38214d.png" alt="效果图"><br><a id="more"></a></p>
+<h2 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm uninstall hexo-generator-index --save</span><br><span class="line">$ npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+<h3 id="新建-修改-文章"><a href="#新建-修改-文章" class="headerlink" title="新建/修改 文章"></a>新建/修改 文章</h3><p>新建或修改文章时在文章<strong>Front-matter</strong>中加入<strong>top: true</strong>即可<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 无JS实现在线客服的切换效果</span><br><span class="line">date: 2018-12-20 15:05:17</span><br><span class="line">tags:</span><br><span class="line">    - css</span><br><span class="line">    - css3</span><br><span class="line">categories: CSS</span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>到此为止，文章的置顶功能就实现了,但是我们还需要给置顶的文章加个标识，如<br><img src="https://i.loli.net/2018/12/29/5c2740bd13582.png" alt><br>So，我们需要加一个图标或者文字标签<br>这里我做了一个简单的，你可以修改一下，做一个好看的图标</p>
+</blockquote>
+<h3 id="添加标识"><a href="#添加标识" class="headerlink" title="添加标识"></a>添加标识</h3><p>如果你使用的是<strong>next</strong>的主题，打开目录<strong>themes/next/layout/_macro</strong>，找到文件post.swig，搜索<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;/&#123;% if theme.seo %&#125;h2&#123;% else %&#125;h1&#123;% endif %&#125;&gt;</span><br></pre></td></tr></table></figure></p>
+<p>大概在65行，在他上面添加<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;span style=&quot;color:#f00;border:1px solid #f00;padding:2px 5px;font-size:12px;&quot;&gt;置顶&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这是你会发现标识出现了，但是高度有些错位，在<strong>themes/next/source/_custom</strong>中找到<strong>custom.styl</strong>文件，添加一行<br><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-title</span> &#123;</span><br><span class="line">  <span class="attribute">line-height</span>:<span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这时你就可以看到具体的效果了</p>
+<blockquote>
+<p>当然你可以添加更好看的图标，只需要修改HTML和CSS即可。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>利用iconfont.cn快速制作前端图标</title>
     <url>/2018/12/22/iconfont/</url>
     <content><![CDATA[<blockquote>
@@ -198,31 +223,6 @@
       <tags>
         <tag>inconfont</tag>
         <tag>图标</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo添加置顶功能和标识</title>
-    <url>/2018/12/29/hexo-top/</url>
-    <content><![CDATA[<p>首先看下效果<br><img src="https://i.loli.net/2018/12/29/5c273ed38214d.png" alt="效果图"><br><a id="more"></a></p>
-<h2 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm uninstall hexo-generator-index --save</span><br><span class="line">$ npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
-<h3 id="新建-修改-文章"><a href="#新建-修改-文章" class="headerlink" title="新建/修改 文章"></a>新建/修改 文章</h3><p>新建或修改文章时在文章<strong>Front-matter</strong>中加入<strong>top: true</strong>即可<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 无JS实现在线客服的切换效果</span><br><span class="line">date: 2018-12-20 15:05:17</span><br><span class="line">tags:</span><br><span class="line">    - css</span><br><span class="line">    - css3</span><br><span class="line">categories: CSS</span><br><span class="line">top: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>到此为止，文章的置顶功能就实现了,但是我们还需要给置顶的文章加个标识，如<br><img src="https://i.loli.net/2018/12/29/5c2740bd13582.png" alt><br>So，我们需要加一个图标或者文字标签<br>这里我做了一个简单的，你可以修改一下，做一个好看的图标</p>
-</blockquote>
-<h3 id="添加标识"><a href="#添加标识" class="headerlink" title="添加标识"></a>添加标识</h3><p>如果你使用的是<strong>next</strong>的主题，打开目录<strong>themes/next/layout/_macro</strong>，找到文件post.swig，搜索<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;/&#123;% if theme.seo %&#125;h2&#123;% else %&#125;h1&#123;% endif %&#125;&gt;</span><br></pre></td></tr></table></figure></p>
-<p>大概在65行，在他上面添加<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    &lt;span style=&quot;color:#f00;border:1px solid #f00;padding:2px 5px;font-size:12px;&quot;&gt;置顶&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>
-<p>这是你会发现标识出现了，但是高度有些错位，在<strong>themes/next/source/_custom</strong>中找到<strong>custom.styl</strong>文件，添加一行<br><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.posts-expand</span> <span class="selector-class">.post-title</span> &#123;</span><br><span class="line">  <span class="attribute">line-height</span>:<span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>这时你就可以看到具体的效果了</p>
-<blockquote>
-<p>当然你可以添加更好看的图标，只需要修改HTML和CSS即可。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>next</tag>
       </tags>
   </entry>
   <entry>
