@@ -389,6 +389,17 @@
       </tags>
   </entry>
   <entry>
+    <title>js求日期差</title>
+    <url>/2018/12/19/timeX/</url>
+    <content><![CDATA[<h3 id="求时间差函数"><a href="#求时间差函数" class="headerlink" title="求时间差函数"></a>求时间差函数</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="string">'2017-02-26'</span>;  <span class="comment">//起始日期</span></span><br><span class="line"><span class="keyword">var</span> s2 = <span class="string">'2017-03-02'</span>;  <span class="comment">//结束日期</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = DateDiff(s1,s2);</span><br><span class="line">	</span><br><span class="line"><span class="function"><span class="keyword">function</span>  <span class="title">DateDiff</span>(<span class="params">sDate1,  sDate2</span>)</span>&#123;    <span class="comment">//sDate1和sDate2是2002-12-18格式  </span></span><br><span class="line">       <span class="keyword">var</span>  aDate,  oDate1,  oDate2,  iDays  </span><br><span class="line">       aDate  =  sDate1.split(<span class="string">"-"</span>)  </span><br><span class="line">       oDate1  =  <span class="keyword">new</span>  <span class="built_in">Date</span>(aDate[<span class="number">1</span>]   +  aDate[<span class="number">2</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">0</span>])    <span class="comment">//转换为12-18-2002格式  </span></span><br><span class="line">       aDate  =  sDate2.split(<span class="string">"-"</span>)  </span><br><span class="line">       oDate2  =  <span class="keyword">new</span>  <span class="built_in">Date</span>(aDate[<span class="number">1</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">2</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">0</span>])  </span><br><span class="line">       iDays  =  <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.abs(oDate1  -  oDate2)  /  <span class="number">1000</span>  /  <span class="number">60</span>  /  <span class="number">60</span>  /<span class="number">24</span>)    <span class="comment">//把相差的毫秒数转换为天数  </span></span><br><span class="line">       <span class="keyword">return</span>  iDays  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>JS</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Three.js 入门</title>
     <url>/2018/12/19/three.js/</url>
     <content><![CDATA[<h3 id="安装three-js"><a href="#安装three-js" class="headerlink" title="安装three.js"></a>安装three.js</h3><p>使用npm安装three.js<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i three -S</span><br></pre></td></tr></table></figure></p>
@@ -417,17 +428,6 @@
       </categories>
       <tags>
         <tag>three.js threejs three</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>js求日期差</title>
-    <url>/2018/12/19/timeX/</url>
-    <content><![CDATA[<h3 id="求时间差函数"><a href="#求时间差函数" class="headerlink" title="求时间差函数"></a>求时间差函数</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="string">'2017-02-26'</span>;  <span class="comment">//起始日期</span></span><br><span class="line"><span class="keyword">var</span> s2 = <span class="string">'2017-03-02'</span>;  <span class="comment">//结束日期</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = DateDiff(s1,s2);</span><br><span class="line">	</span><br><span class="line"><span class="function"><span class="keyword">function</span>  <span class="title">DateDiff</span>(<span class="params">sDate1,  sDate2</span>)</span>&#123;    <span class="comment">//sDate1和sDate2是2002-12-18格式  </span></span><br><span class="line">       <span class="keyword">var</span>  aDate,  oDate1,  oDate2,  iDays  </span><br><span class="line">       aDate  =  sDate1.split(<span class="string">"-"</span>)  </span><br><span class="line">       oDate1  =  <span class="keyword">new</span>  <span class="built_in">Date</span>(aDate[<span class="number">1</span>]   +  aDate[<span class="number">2</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">0</span>])    <span class="comment">//转换为12-18-2002格式  </span></span><br><span class="line">       aDate  =  sDate2.split(<span class="string">"-"</span>)  </span><br><span class="line">       oDate2  =  <span class="keyword">new</span>  <span class="built_in">Date</span>(aDate[<span class="number">1</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">2</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">0</span>])  </span><br><span class="line">       iDays  =  <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.abs(oDate1  -  oDate2)  /  <span class="number">1000</span>  /  <span class="number">60</span>  /  <span class="number">60</span>  /<span class="number">24</span>)    <span class="comment">//把相差的毫秒数转换为天数  </span></span><br><span class="line">       <span class="keyword">return</span>  iDays  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>JS</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
       </tags>
   </entry>
   <entry>
