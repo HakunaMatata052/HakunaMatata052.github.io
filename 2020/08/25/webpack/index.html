@@ -148,7 +148,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <meta property="og:site_name" content="Dobby">
 <meta property="og:description" content="初始化npm使用-y来快速创建1npm init -y 安装webpack和webpack-cli脚手架从webpack4.0开始，webpack打包工具和命令行工具就开成两个包了，需要同时安装1npm i webpack webpack-cli -D 创建工程目录新建src目录，之后写的js、html、css等源文件放在这里,在src目录下新建一个index.js作为入口文件src/index.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-25T06:55:59.300Z">
+<meta property="og:updated_time" content="2020-08-25T07:01:44.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速搭建webpack4.0+">
 <meta name="twitter:description" content="初始化npm使用-y来快速创建1npm init -y 安装webpack和webpack-cli脚手架从webpack4.0开始，webpack打包工具和命令行工具就开成两个包了，需要同时安装1npm i webpack webpack-cli -D 创建工程目录新建src目录，之后写的js、html、css等源文件放在这里,在src目录下新建一个index.js作为入口文件src/index.">
@@ -532,7 +532,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
               
 
-              <time title="创建时间：2020-08-25 14:14:00 / 修改时间：14:55:59" itemprop="dateCreated datePublished" datetime="2020-08-25T14:14:00+08:00">2020-08-25</time>
+              <time title="创建时间：2020-08-25 14:14:00 / 修改时间：15:01:44" itemprop="dateCreated datePublished" datetime="2020-08-25T14:14:00+08:00">2020-08-25</time>
             
 
             
@@ -555,6 +555,13 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JS/" itemprop="url" rel="index"><span itemprop="name">JS</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JS/webpack/" itemprop="url" rel="index"><span itemprop="name">webpack</span></a></span>
 
                 
                 
@@ -632,10 +639,10 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 </ul>
 </li>
 <li>package.json</li>
-<li>webpack.config.js<h3 id="新增命令行"><a href="#新增命令行" class="headerlink" title="新增命令行"></a>新增命令行</h3>在<code>package.json</code>的scripts中新增一个命令<br>其中<br><code>--host 192.138.0.2</code>表示配置本地服务的ip<br><code>--hot</code>表示开启热更新模式<br><code>--https</code>表示开始https<br><code>--port 80</code>表示端口为80<br><code>--open</code>表示启动后自动打开游览器，后面可以跟游览器的标识，不写表示打开默认游览器<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"dev"</span>:<span class="string">"webpack-dev-server --host 192.168.0.2 --hot --https --port 80 --open"</span>,</span><br><span class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></span><br><span class="line">&#125;,</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<li>webpack.config.js<h3 id="新增命令行"><a href="#新增命令行" class="headerlink" title="新增命令行"></a>新增命令行</h3>在<code>package.json</code>的scripts中新增一个命令<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"dev"</span>:<span class="string">"webpack-dev-server --host 192.168.0.2 --hot --https --port 80 --open"</span>,</span><br><span class="line">    <span class="string">"test"</span>: <span class="string">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span></span><br><span class="line">&#125;,</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>到此本地服务就搭建完毕了，接下来需要配置loader和打包选项，今天先更到这里</p>
+<p>其中<br><code>--host 192.138.0.2</code>表示配置本地服务的ip<br><code>--hot</code>表示开启热更新模式<br><code>--https</code>表示开始https<br><code>--port 80</code>表示端口为80<br><code>--open</code>表示启动后自动打开游览器，后面可以跟游览器的标识，不写表示打开默认游览器<br>到此本地服务就搭建完毕了，接下来需要配置loader和打包选项，今天先更到这里</p>
 
       
     </div>
@@ -846,7 +853,9 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
