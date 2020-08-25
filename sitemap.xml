@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hakunamatata052.github.io/2018/12/19/yuange/</loc>
+    <loc>http://hakunamatata052.github.io/2020/08/25/yuange/</loc>
     
-    <lastmod>2020-08-25T08:07:50.083Z</lastmod>
+    <lastmod>2020-08-25T08:44:38.711Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hakunamatata052.github.io/2020/08/25/webpack/</loc>
+    
+    <lastmod>2020-08-25T08:43:36.821Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://hakunamatata052.github.io/2020/08/25/promise/</loc>
     
     <lastmod>2020-08-25T07:45:35.517Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hakunamatata052.github.io/2020/08/25/webpack/</loc>
-    
-    <lastmod>2020-08-25T07:02:33.148Z</lastmod>
     
   </url>
   
