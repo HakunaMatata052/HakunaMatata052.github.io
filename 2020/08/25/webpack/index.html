@@ -148,7 +148,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <meta property="og:site_name" content="Dobby">
 <meta property="og:description" content="初始化npm使用-y来快速创建1npm init -y 安装webpack和webpack-cli脚手架从webpack4.0开始，webpack打包工具和命令行工具就开成两个包了，需要同时安装1npm i webpack webpack-cli -D 创建工程目录新建src目录，之后写的js、html、css等源文件放在这里,在src目录下新建一个index.js作为入口文件src/index.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-25T07:01:44.496Z">
+<meta property="og:updated_time" content="2020-08-25T07:02:33.148Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速搭建webpack4.0+">
 <meta name="twitter:description" content="初始化npm使用-y来快速创建1npm init -y 安装webpack和webpack-cli脚手架从webpack4.0开始，webpack打包工具和命令行工具就开成两个包了，需要同时安装1npm i webpack webpack-cli -D 创建工程目录新建src目录，之后写的js、html、css等源文件放在这里,在src目录下新建一个index.js作为入口文件src/index.">
@@ -532,7 +532,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
               
 
-              <time title="创建时间：2020-08-25 14:14:00 / 修改时间：15:01:44" itemprop="dateCreated datePublished" datetime="2020-08-25T14:14:00+08:00">2020-08-25</time>
+              <time title="创建时间：2020-08-25 14:14:00 / 修改时间：15:02:33" itemprop="dateCreated datePublished" datetime="2020-08-25T14:14:00+08:00">2020-08-25</time>
             
 
             
@@ -629,7 +629,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 </li>
 </ul>
 <h3 id="安装html-webpack-plugin插件"><a href="#安装html-webpack-plugin插件" class="headerlink" title="安装html-webpack-plugin插件"></a>安装html-webpack-plugin插件</h3><p>虽然现在可以试试打包js，但是我们的html依然不能进行热更新，而且打包上线时，打包的资源文件一般会进行哈希命名，每次打包手动修改index.html文件中的资源文件名着实很费劲<br>因此需要html-webpack-plugin插件帮我们自动完成资源引用并增加热更新功能<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i html-webpack-plugin -D</span><br></pre></td></tr></table></figure></p>
-<p>安装好后在项目根目录下新建<code>webpack.config.js</code>文件，并设置html-webpack-plugin的对应html模板<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>)</span><br><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>)</span><br><span class="line"><span class="built_in">module</span>.exports =&#123;</span><br><span class="line">    plugins:[</span><br><span class="line">        <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">            filename:<span class="string">'index.html'</span>,</span><br><span class="line">            template:<span class="string">"./src/index.html"</span></span><br><span class="line">        &#125;)</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>安装好后在项目根目录下新建<code>webpack.config.js</code>文件，并设置html-webpack-plugin的对应html模板<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> HtmlWebpackPlugin = <span class="built_in">require</span>(<span class="string">'html-webpack-plugin'</span>)</span><br><span class="line"><span class="built_in">module</span>.exports =&#123;</span><br><span class="line">    plugins:[</span><br><span class="line">        <span class="keyword">new</span> HtmlWebpackPlugin(&#123;</span><br><span class="line">            filename:<span class="string">'index.html'</span>,</span><br><span class="line">            template:<span class="string">"./src/index.html"</span></span><br><span class="line">        &#125;)</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>在src下新建index.html文件<br>之后目录应为</p>
 <ul>
 <li>node_modules</li>
