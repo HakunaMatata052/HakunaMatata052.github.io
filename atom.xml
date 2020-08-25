@@ -5,9 +5,9 @@
   <subtitle>Dobby is a free elf!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://dobby.me/"/>
+  <link href="http://hakunamatata052.github.io/"/>
   <updated>2020-08-24T09:01:01.619Z</updated>
-  <id>https://dobby.me/</id>
+  <id>http://hakunamatata052.github.io/</id>
   
   <author>
     <name>Hakunamatata</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Three.js 入门</title>
-    <link href="https://dobby.me/2020/08/24/three.js/"/>
-    <id>https://dobby.me/2020/08/24/three.js/</id>
+    <link href="http://hakunamatata052.github.io/2020/08/24/three.js/"/>
+    <id>http://hakunamatata052.github.io/2020/08/24/three.js/</id>
     <published>2020-08-24T08:21:00.000Z</published>
     <updated>2020-08-24T09:01:01.619Z</updated>
     
@@ -33,17 +33,17 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
     
-      <category term="three.js threejs three" scheme="https://dobby.me/tags/three-js-threejs-three/"/>
+      <category term="three.js threejs three" scheme="http://hakunamatata052.github.io/tags/three-js-threejs-three/"/>
     
   </entry>
   
   <entry>
     <title>制作菱形图片遮罩</title>
-    <link href="https://dobby.me/2019/03/01/mark/"/>
-    <id>https://dobby.me/2019/03/01/mark/</id>
+    <link href="http://hakunamatata052.github.io/2019/03/01/mark/"/>
+    <id>http://hakunamatata052.github.io/2019/03/01/mark/</id>
     <published>2019-03-01T02:56:52.000Z</published>
     <updated>2020-08-21T02:57:01.406Z</updated>
     
@@ -57,17 +57,17 @@
     
     </summary>
     
-      <category term="CSS" scheme="https://dobby.me/categories/CSS/"/>
+      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="CSS CSS3" scheme="https://dobby.me/tags/CSS-CSS3/"/>
+      <category term="CSS CSS3" scheme="http://hakunamatata052.github.io/tags/CSS-CSS3/"/>
     
   </entry>
   
   <entry>
     <title>科学上网（翻墙）神器【蓝灯】</title>
-    <link href="https://dobby.me/2019/01/21/lantern/"/>
-    <id>https://dobby.me/2019/01/21/lantern/</id>
+    <link href="http://hakunamatata052.github.io/2019/01/21/lantern/"/>
+    <id>http://hakunamatata052.github.io/2019/01/21/lantern/</id>
     <published>2019-01-21T01:08:46.000Z</published>
     <updated>2020-08-21T02:57:01.402Z</updated>
     
@@ -80,16 +80,16 @@
     </summary>
     
     
-      <category term="科学上网" scheme="https://dobby.me/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="http://hakunamatata052.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="翻墙" scheme="https://dobby.me/tags/%E7%BF%BB%E5%A2%99/"/>
+      <category term="翻墙" scheme="http://hakunamatata052.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
     
   </entry>
   
   <entry>
     <title>一句代码解决bootstrap栅格几个设置5等分</title>
-    <link href="https://dobby.me/2019/01/04/bootstrap-offset/"/>
-    <id>https://dobby.me/2019/01/04/bootstrap-offset/</id>
+    <link href="http://hakunamatata052.github.io/2019/01/04/bootstrap-offset/"/>
+    <id>http://hakunamatata052.github.io/2019/01/04/bootstrap-offset/</id>
     <published>2019-01-04T07:45:01.000Z</published>
     <updated>2020-08-21T02:57:01.360Z</updated>
     
@@ -104,21 +104,21 @@
     
     </summary>
     
-      <category term="HTML" scheme="https://dobby.me/categories/HTML/"/>
+      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
     
-      <category term="BOOTSTRAP" scheme="https://dobby.me/categories/HTML/BOOTSTRAP/"/>
+      <category term="BOOTSTRAP" scheme="http://hakunamatata052.github.io/categories/HTML/BOOTSTRAP/"/>
     
     
-      <category term="bootstrap" scheme="https://dobby.me/tags/bootstrap/"/>
+      <category term="bootstrap" scheme="http://hakunamatata052.github.io/tags/bootstrap/"/>
     
-      <category term="offset" scheme="https://dobby.me/tags/offset/"/>
+      <category term="offset" scheme="http://hakunamatata052.github.io/tags/offset/"/>
     
   </entry>
   
   <entry>
     <title>This is dobby!</title>
-    <link href="https://dobby.me/2019/01/03/dobby/"/>
-    <id>https://dobby.me/2019/01/03/dobby/</id>
+    <link href="http://hakunamatata052.github.io/2019/01/03/dobby/"/>
+    <id>http://hakunamatata052.github.io/2019/01/03/dobby/</id>
     <published>2019-01-03T09:22:09.000Z</published>
     <updated>2020-08-21T02:57:01.361Z</updated>
     
@@ -133,15 +133,15 @@
     
     </summary>
     
-      <category term="日常" scheme="https://dobby.me/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="http://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
   
   <entry>
     <title>如何使用fonts.googleapis.com使自己的网站增加更多字体</title>
-    <link href="https://dobby.me/2019/01/02/fonts-googleapis/"/>
-    <id>https://dobby.me/2019/01/02/fonts-googleapis/</id>
+    <link href="http://hakunamatata052.github.io/2019/01/02/fonts-googleapis/"/>
+    <id>http://hakunamatata052.github.io/2019/01/02/fonts-googleapis/</id>
     <published>2019-01-02T09:04:17.000Z</published>
     <updated>2020-08-21T02:57:01.369Z</updated>
     
@@ -153,19 +153,19 @@
     
     </summary>
     
-      <category term="HTML" scheme="https://dobby.me/categories/HTML/"/>
+      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="googleapis" scheme="https://dobby.me/tags/googleapis/"/>
+      <category term="googleapis" scheme="http://hakunamatata052.github.io/tags/googleapis/"/>
     
-      <category term="字体" scheme="https://dobby.me/tags/%E5%AD%97%E4%BD%93/"/>
+      <category term="字体" scheme="http://hakunamatata052.github.io/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>Hexo添加置顶功能和标识</title>
-    <link href="https://dobby.me/2018/12/29/hexo-top/"/>
-    <id>https://dobby.me/2018/12/29/hexo-top/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/29/hexo-top/"/>
+    <id>http://hakunamatata052.github.io/2018/12/29/hexo-top/</id>
     <published>2018-12-29T09:29:09.000Z</published>
     <updated>2020-08-21T02:57:01.376Z</updated>
     
@@ -177,19 +177,19 @@
     
     </summary>
     
-      <category term="hexo" scheme="https://dobby.me/categories/hexo/"/>
+      <category term="hexo" scheme="http://hakunamatata052.github.io/categories/hexo/"/>
     
     
-      <category term="Hexo" scheme="https://dobby.me/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://hakunamatata052.github.io/tags/Hexo/"/>
     
-      <category term="next" scheme="https://dobby.me/tags/next/"/>
+      <category term="next" scheme="http://hakunamatata052.github.io/tags/next/"/>
     
   </entry>
   
   <entry>
     <title>利用iconfont.cn快速制作前端图标</title>
-    <link href="https://dobby.me/2018/12/22/iconfont/"/>
-    <id>https://dobby.me/2018/12/22/iconfont/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/22/iconfont/"/>
+    <id>http://hakunamatata052.github.io/2018/12/22/iconfont/</id>
     <published>2018-12-22T02:28:36.000Z</published>
     <updated>2020-08-21T02:57:01.378Z</updated>
     
@@ -203,19 +203,19 @@
     
     </summary>
     
-      <category term="HTML" scheme="https://dobby.me/categories/HTML/"/>
+      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="inconfont" scheme="https://dobby.me/tags/inconfont/"/>
+      <category term="inconfont" scheme="http://hakunamatata052.github.io/tags/inconfont/"/>
     
-      <category term="图标" scheme="https://dobby.me/tags/%E5%9B%BE%E6%A0%87/"/>
+      <category term="图标" scheme="http://hakunamatata052.github.io/tags/%E5%9B%BE%E6%A0%87/"/>
     
   </entry>
   
   <entry>
     <title>利用Github上传并引用video资源</title>
-    <link href="https://dobby.me/2018/12/21/github-video/"/>
-    <id>https://dobby.me/2018/12/21/github-video/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/21/github-video/"/>
+    <id>http://hakunamatata052.github.io/2018/12/21/github-video/</id>
     <published>2018-12-21T07:56:58.000Z</published>
     <updated>2020-08-21T02:57:01.370Z</updated>
     
@@ -229,17 +229,17 @@
     
     </summary>
     
-      <category term="HTML" scheme="https://dobby.me/categories/HTML/"/>
+      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="github" scheme="https://dobby.me/tags/github/"/>
+      <category term="github" scheme="http://hakunamatata052.github.io/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>Vue全局公用函数</title>
-    <link href="https://dobby.me/2018/12/21/vue-global-function/"/>
-    <id>https://dobby.me/2018/12/21/vue-global-function/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/21/vue-global-function/"/>
+    <id>http://hakunamatata052.github.io/2018/12/21/vue-global-function/</id>
     <published>2018-12-21T03:00:29.000Z</published>
     <updated>2020-08-21T02:57:01.411Z</updated>
     
@@ -253,19 +253,19 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="VUE" scheme="https://dobby.me/categories/JS/VUE/"/>
+      <category term="VUE" scheme="http://hakunamatata052.github.io/categories/JS/VUE/"/>
     
     
-      <category term="vue" scheme="https://dobby.me/tags/vue/"/>
+      <category term="vue" scheme="http://hakunamatata052.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>无JS实现在线客服的切换效果</title>
-    <link href="https://dobby.me/2018/12/20/nojs-toggle/"/>
-    <id>https://dobby.me/2018/12/20/nojs-toggle/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/20/nojs-toggle/"/>
+    <id>http://hakunamatata052.github.io/2018/12/20/nojs-toggle/</id>
     <published>2018-12-20T07:05:17.000Z</published>
     <updated>2020-08-21T04:45:23.640Z</updated>
     
@@ -279,19 +279,19 @@
     
     </summary>
     
-      <category term="CSS" scheme="https://dobby.me/categories/CSS/"/>
+      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="css3" scheme="https://dobby.me/tags/css3/"/>
+      <category term="css" scheme="http://hakunamatata052.github.io/tags/css/"/>
     
-      <category term="css" scheme="https://dobby.me/tags/css/"/>
+      <category term="css3" scheme="http://hakunamatata052.github.io/tags/css3/"/>
     
   </entry>
   
   <entry>
     <title>javascript思维导图</title>
-    <link href="https://dobby.me/2018/12/20/js-mind-map/"/>
-    <id>https://dobby.me/2018/12/20/js-mind-map/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/20/js-mind-map/"/>
+    <id>http://hakunamatata052.github.io/2018/12/20/js-mind-map/</id>
     <published>2018-12-20T00:40:43.000Z</published>
     <updated>2020-08-21T02:57:01.384Z</updated>
     
@@ -303,19 +303,19 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
     
-      <category term="js" scheme="https://dobby.me/tags/js/"/>
+      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
     
-      <category term="javascript" scheme="https://dobby.me/tags/javascript/"/>
+      <category term="javascript" scheme="http://hakunamatata052.github.io/tags/javascript/"/>
     
   </entry>
   
   <entry>
     <title>PNG格式小图标的CSS任意颜色赋色技术</title>
-    <link href="https://dobby.me/2018/12/19/css3-add-color/"/>
-    <id>https://dobby.me/2018/12/19/css3-add-color/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/css3-add-color/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/css3-add-color/</id>
     <published>2018-12-19T09:50:12.000Z</published>
     <updated>2020-08-21T02:57:01.360Z</updated>
     
@@ -327,17 +327,17 @@
     
     </summary>
     
-      <category term="CSS" scheme="https://dobby.me/categories/CSS/"/>
+      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="css3" scheme="https://dobby.me/tags/css3/"/>
+      <category term="css3" scheme="http://hakunamatata052.github.io/tags/css3/"/>
     
   </entry>
   
   <entry>
     <title>css3曲线投影</title>
-    <link href="https://dobby.me/2018/12/19/css3-curve-shadow/"/>
-    <id>https://dobby.me/2018/12/19/css3-curve-shadow/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/css3-curve-shadow/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/css3-curve-shadow/</id>
     <published>2018-12-19T09:38:12.000Z</published>
     <updated>2020-08-21T02:57:01.360Z</updated>
     
@@ -349,19 +349,19 @@
     
     </summary>
     
-      <category term="CSS" scheme="https://dobby.me/categories/CSS/"/>
+      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="css3" scheme="https://dobby.me/tags/css3/"/>
+      <category term="css" scheme="http://hakunamatata052.github.io/tags/css/"/>
     
-      <category term="css" scheme="https://dobby.me/tags/css/"/>
+      <category term="css3" scheme="http://hakunamatata052.github.io/tags/css3/"/>
     
   </entry>
   
   <entry>
     <title>jQueryAjax请求完全版</title>
-    <link href="https://dobby.me/2018/12/19/jquery-ajax/"/>
-    <id>https://dobby.me/2018/12/19/jquery-ajax/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/jquery-ajax/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/jquery-ajax/</id>
     <published>2018-12-19T09:34:07.000Z</published>
     <updated>2020-08-21T02:57:01.383Z</updated>
     
@@ -376,21 +376,21 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="jQuery" scheme="https://dobby.me/categories/JS/jQuery/"/>
+      <category term="jQuery" scheme="http://hakunamatata052.github.io/categories/JS/jQuery/"/>
     
     
-      <category term="js" scheme="https://dobby.me/tags/js/"/>
+      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
     
-      <category term="jquery" scheme="https://dobby.me/tags/jquery/"/>
+      <category term="jquery" scheme="http://hakunamatata052.github.io/tags/jquery/"/>
     
   </entry>
   
   <entry>
     <title>Vuex的使用</title>
-    <link href="https://dobby.me/2018/12/19/vuex/"/>
-    <id>https://dobby.me/2018/12/19/vuex/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/vuex/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/vuex/</id>
     <published>2018-12-19T08:25:36.000Z</published>
     <updated>2020-08-21T02:57:01.411Z</updated>
     
@@ -402,21 +402,21 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="VUE" scheme="https://dobby.me/categories/JS/VUE/"/>
+      <category term="VUE" scheme="http://hakunamatata052.github.io/categories/JS/VUE/"/>
     
     
-      <category term="vue" scheme="https://dobby.me/tags/vue/"/>
+      <category term="vue" scheme="http://hakunamatata052.github.io/tags/vue/"/>
     
-      <category term="vuex" scheme="https://dobby.me/tags/vuex/"/>
+      <category term="vuex" scheme="http://hakunamatata052.github.io/tags/vuex/"/>
     
   </entry>
   
   <entry>
     <title>统计数组中相同值的个数</title>
-    <link href="https://dobby.me/2018/12/19/Array-of-the-same-kind/"/>
-    <id>https://dobby.me/2018/12/19/Array-of-the-same-kind/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/Array-of-the-same-kind/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/Array-of-the-same-kind/</id>
     <published>2018-12-19T08:24:18.000Z</published>
     <updated>2020-08-21T02:57:01.359Z</updated>
     
@@ -431,21 +431,21 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
     
-      <category term="js" scheme="https://dobby.me/tags/js/"/>
+      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
     
-      <category term="数组" scheme="https://dobby.me/tags/%E6%95%B0%E7%BB%84/"/>
+      <category term="数组" scheme="http://hakunamatata052.github.io/tags/%E6%95%B0%E7%BB%84/"/>
     
-      <category term="Array" scheme="https://dobby.me/tags/Array/"/>
+      <category term="Array" scheme="http://hakunamatata052.github.io/tags/Array/"/>
     
   </entry>
   
   <entry>
     <title>js求日期差</title>
-    <link href="https://dobby.me/2018/12/19/timeX/"/>
-    <id>https://dobby.me/2018/12/19/timeX/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/timeX/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/timeX/</id>
     <published>2018-12-19T08:21:00.000Z</published>
     <updated>2020-08-21T02:57:01.410Z</updated>
     
@@ -460,21 +460,21 @@
     
     </summary>
     
-      <category term="JS" scheme="https://dobby.me/categories/JS/"/>
+      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
     
     
-      <category term="js" scheme="https://dobby.me/tags/js/"/>
+      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>无js实现选项卡效果</title>
-    <link href="https://dobby.me/2018/12/19/nojs-tabs/"/>
-    <id>https://dobby.me/2018/12/19/nojs-tabs/</id>
+    <link href="http://hakunamatata052.github.io/2018/12/19/nojs-tabs/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/nojs-tabs/</id>
     <published>2018-12-19T06:52:35.000Z</published>
     <updated>2020-08-21T02:57:01.408Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="无js实现选项卡效果"><a href="#无js实现选项卡效果" class="headerlink" title="无js实现选项卡效果"></a>无js实现选项卡效果</h3><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><h1 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h1><iframe src="/dome1/" width="600" height="300" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes"></iframe><h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>利用锚链接和滚动条实现</p><h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>基本功能可以满足，但有两个问题，一是由于改变location的hash实现的定位，会触发浏览器原生滚动行为，体验不好；二是选项卡内容的切换“邦邦邦”过于生硬<br><a id="more"></a></p><h1 id="具体代码"><a href="#具体代码" class="headerlink" title="具体代码"></a>具体代码</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.list</span> &#123;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">background</span>: <span class="number">#ddd</span>;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">80px</span>;</span><br><span class="line"><span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.link</span> &#123;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"><span class="attribute">padding-top</span>: <span class="number">10px</span>;</span><br><span class="line"><span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.click</span> &#123;</span><br><span class="line"><span class="attribute">display</span>: inline-block;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line"><span class="attribute">background</span>: <span class="number">#f7f7f7</span>;</span><br><span class="line"><span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line"><span class="attribute">font-weight</span>: bold;</span><br><span class="line"><span class="attribute">text-align</span>: center;</span><br><span class="line"><span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.click</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line"><span class="attribute">background</span>: <span class="number">#eee</span>;</span><br><span class="line"><span class="attribute">color</span>: <span class="number">#345</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><h1 id="效果展示-1"><a href="#效果展示-1" class="headerlink" title="效果展示"></a>效果展示</h1><p><a href="https://hakunamatata052.github.io/blog/example/2.html" target="_blank" rel="noopener">点击查看效果</a></p><h1 id="实现原理-1"><a href="#实现原理-1" class="headerlink" title="实现原理"></a>实现原理</h1><p>基于控件元素focus触发滚动重定位</p><h1 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h1><p>选项卡内容切换的时候，还是“邦邦邦”这种干巴巴的效果，并没有滑来滑去那种湿湿的效果</p><h1 id="具体代码-1"><a href="#具体代码-1" class="headerlink" title="具体代码"></a>具体代码</h1><h2 id="HTML-1"><a href="#HTML-1" class="headerlink" title="HTML"></a>HTML</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">20em</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.list</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#ddd</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.list</span> &gt; <span class="selector-tag">input</span> &#123; </span><br><span class="line">  <span class="attribute">position</span>: absolute; <span class="attribute">top</span>:<span class="number">0</span>; </span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>; <span class="attribute">width</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">0</span>; <span class="attribute">padding</span>: <span class="number">0</span>; <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">clip</span>: <span class="built_in">rect</span>(<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="无js实现选项卡效果"><a href="#无js实现选项卡效果" class="headerlink" title="无js实现选项卡效果"></a>无js实现选项卡效果</h3><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><h1 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h1><iframe src="/dome1/" width="600" height="300" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes"></iframe><h1 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h1><p>利用锚链接和滚动条实现</p><h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>基本功能可以满足，但有两个问题，一是由于改变location的hash实现的定位，会触发浏览器原生滚动行为，体验不好；二是选项卡内容的切换“邦邦邦”过于生硬<br><a id="more"></a></p><h1 id="具体代码"><a href="#具体代码" class="headerlink" title="具体代码"></a>具体代码</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span> <span class="attr">id</span>=<span class="string">"four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">href</span>=<span class="string">"#four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.list</span> &#123;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line"><span class="attribute">background</span>: <span class="number">#ddd</span>;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">80px</span>;</span><br><span class="line"><span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.link</span> &#123;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line"><span class="attribute">padding-top</span>: <span class="number">10px</span>;</span><br><span class="line"><span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.click</span> &#123;</span><br><span class="line"><span class="attribute">display</span>: inline-block;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">line-height</span>: <span class="number">20px</span>;</span><br><span class="line"><span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line"><span class="attribute">background</span>: <span class="number">#f7f7f7</span>;</span><br><span class="line"><span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line"><span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line"><span class="attribute">font-weight</span>: bold;</span><br><span class="line"><span class="attribute">text-align</span>: center;</span><br><span class="line"><span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.click</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line"><span class="attribute">background</span>: <span class="number">#eee</span>;</span><br><span class="line"><span class="attribute">color</span>: <span class="number">#345</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><h1 id="效果展示-1"><a href="#效果展示-1" class="headerlink" title="效果展示"></a>效果展示</h1><p><a href="https://hakunamatata052.github.io/blog/example/2.html">点击查看效果</a></p><h1 id="实现原理-1"><a href="#实现原理-1" class="headerlink" title="实现原理"></a>实现原理</h1><p>基于控件元素focus触发滚动重定位</p><h1 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h1><p>选项卡内容切换的时候，还是“邦邦邦”这种干巴巴的效果，并没有滑来滑去那种湿湿的效果</p><h1 id="具体代码-1"><a href="#具体代码-1" class="headerlink" title="具体代码"></a>具体代码</h1><h2 id="HTML-1"><a href="#HTML-1" class="headerlink" title="HTML"></a>HTML</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"list"</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"link"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"one"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"two"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"three"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">class</span>=<span class="string">"click"</span> <span class="attr">for</span>=<span class="string">"four"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">20em</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">10em</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ddd</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.list</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#ddd</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.list</span> &gt; <span class="selector-tag">input</span> &#123; </span><br><span class="line">  <span class="attribute">position</span>: absolute; <span class="attribute">top</span>:<span class="number">0</span>; </span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>; <span class="attribute">width</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">0</span>; <span class="attribute">padding</span>: <span class="number">0</span>; <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">clip</span>: <span class="built_in">rect</span>(<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -485,14 +485,14 @@
     
     </summary>
     
-      <category term="HTML" scheme="https://dobby.me/categories/HTML/"/>
+      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="tab" scheme="https://dobby.me/tags/tab/"/>
+      <category term="tab" scheme="http://hakunamatata052.github.io/tags/tab/"/>
     
-      <category term="选项卡" scheme="https://dobby.me/tags/%E9%80%89%E9%A1%B9%E5%8D%A1/"/>
+      <category term="选项卡" scheme="http://hakunamatata052.github.io/tags/%E9%80%89%E9%A1%B9%E5%8D%A1/"/>
     
-      <category term="无js" scheme="https://dobby.me/tags/%E6%97%A0js/"/>
+      <category term="无js" scheme="http://hakunamatata052.github.io/tags/%E6%97%A0js/"/>
     
   </entry>
   
