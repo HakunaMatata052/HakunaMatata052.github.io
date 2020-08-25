@@ -148,7 +148,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <meta property="og:site_name" content="Dobby">
 <meta property="og:description" content="为什么要用Promise一般情况我们一次性调用API就可以完成请求。有些情况需要多次调用服务器API，就会形成一个链式调用，比如为了完成一个功能，我们需要调用API1、API2、API3，依次按照顺序进行调用，这个时候就会出现回调地狱的问题 Promise的链式结构使用Promise可以做到链式结构，即一个请求结束后在then方法中执行下一个异步请求，再下一个异步请求放在上一个异步请求的then方">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-08-25T03:47:18.039Z">
+<meta property="og:updated_time" content="2020-08-25T06:12:15.262Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Promise和async&#x2F;await">
 <meta name="twitter:description" content="为什么要用Promise一般情况我们一次性调用API就可以完成请求。有些情况需要多次调用服务器API，就会形成一个链式调用，比如为了完成一个功能，我们需要调用API1、API2、API3，依次按照顺序进行调用，这个时候就会出现回调地狱的问题 Promise的链式结构使用Promise可以做到链式结构，即一个请求结束后在then方法中执行下一个异步请求，再下一个异步请求放在上一个异步请求的then方">
@@ -510,6 +510,8 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
               
             
             
+              <span style="color:#f00;border:1px solid #f00;padding:2px 5px;font-size:12px;">置顶</span>
+            
           </h2>
         
 
@@ -532,7 +534,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
               
 
-              <time title="创建时间：2020-08-25 11:18:00 / 修改时间：11:47:18" itemprop="dateCreated datePublished" datetime="2020-08-25T11:18:00+08:00">2020-08-25</time>
+              <time title="创建时间：2020-08-25 11:18:00 / 修改时间：14:12:15" itemprop="dateCreated datePublished" datetime="2020-08-25T11:18:00+08:00">2020-08-25</time>
             
 
             
@@ -615,7 +617,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <p>执行结果是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">结束</span><br></pre></td></tr></table></figure></p>
 <h3 id="使用all方法"><a href="#使用all方法" class="headerlink" title="使用all方法"></a>使用all方法</h3><p>但是通常在真是项目中，每个请求会有单独的方法封装，而且每个Promise会有独立的then方法，这时可以使用Promise对象的all方法<br>他表示无论三个异步请求谁先执行谁后执行，都等待三个异步请求全部结束后执行all中的函数。<br>如果后一个请求需要得到前一个请求中的数据，那么还是需要使用前面的链式结构才行。<br>如果既要使用已经封装好的Promise函数，有需要按步调用，可以使用ES7中的async/await<br>eg.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> promise1 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">res, rej</span>)=&gt;</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="number">1</span>)</span><br><span class="line">        res()</span><br><span class="line">    &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> promise2 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">res, rej</span>)=&gt;</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="number">2</span>)</span><br><span class="line">        res()</span><br><span class="line">    &#125;, <span class="number">3000</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> promise3 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">res, rej</span>)=&gt;</span>&#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="number">3</span>)</span><br><span class="line">        res()</span><br><span class="line">    &#125;, <span class="number">2000</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">Promise</span>.all([promise1, promise2, promise3]).then(<span class="function"><span class="params">()</span>=&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'结束'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <h4 id="async-await"><a href="#async-await" class="headerlink" title="async/await"></a>async/await</h4><p>首先封装的方法需要return一个Promise对象，接着在请求的函数前面添加async关键字，在请求函数的内部使用变量或常量接受封装的Promise对象即可，但是封装的Promise对象前需要加await<br>这时接收到的结果就是Promise对象中then方法中return的结果<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ajax</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>)=&gt;</span>&#123;</span><br><span class="line">        setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            resolve(<span class="string">"666"</span>)</span><br><span class="line">        &#125;, <span class="number">5000</span>);</span><br><span class="line">    &#125;).then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">ajaxAsync</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">const</span> r = <span class="keyword">await</span> ajax()    </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>)</span><br><span class="line">    <span class="built_in">console</span>.log(r)    </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">3</span>)</span><br><span class="line">&#125;</span><br><span class="line">ajaxAsync()</span><br></pre></td></tr></table></figure></p>
-<p>执行结果是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">666</span><br><span class="line">3</span><br></pre></td></tr></table></figure></p>
+<p>执行结果是<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span>  <span class="comment">// 5s后</span></span><br><span class="line"><span class="number">666</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -718,6 +720,10 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2020/08/25/webpack/" rel="prev" title="快速搭建webpack4.0+">
+                快速搭建webpack4.0+ <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -795,7 +801,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -824,7 +830,9 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -889,7 +897,9 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                     
                       
                     
-                    <span class="site-state-item-count">26</span>
+                      
+                    
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
