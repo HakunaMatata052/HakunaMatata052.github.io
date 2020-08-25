@@ -441,6 +441,31 @@
   
   <entry>
     <title>Vuex的使用</title>
+    <link href="http://hakunamatata052.github.io/2018/12/19/yuange/"/>
+    <id>http://hakunamatata052.github.io/2018/12/19/yuange/</id>
+    <published>2018-12-19T08:25:36.000Z</published>
+    <updated>2020-08-25T08:07:50.083Z</updated>
+    
+    <content type="html"><![CDATA[<video src="/2018/12/19/yuange/4852abda01b06d0270ff57cff566085c.mp4" autoplay controls style="display:block;margin:auto"></video>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;video src=&quot;/2018/12/19/yuange/4852abda01b06d0270ff57cff566085c.mp4&quot; autoplay controls style=&quot;display:block;margin:auto&quot;&gt;&lt;/video&gt;
+      
+    
+    </summary>
+    
+      <category term="日常" scheme="http://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+      <category term="元歌 王者荣耀" scheme="http://hakunamatata052.github.io/tags/%E5%85%83%E6%AD%8C-%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vuex的使用</title>
     <link href="http://hakunamatata052.github.io/2018/12/19/vuex/"/>
     <id>http://hakunamatata052.github.io/2018/12/19/vuex/</id>
     <published>2018-12-19T08:25:36.000Z</published>
@@ -491,31 +516,6 @@
       <category term="数组" scheme="http://hakunamatata052.github.io/tags/%E6%95%B0%E7%BB%84/"/>
     
       <category term="Array" scheme="http://hakunamatata052.github.io/tags/Array/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>js求日期差</title>
-    <link href="http://hakunamatata052.github.io/2018/12/19/timeX/"/>
-    <id>http://hakunamatata052.github.io/2018/12/19/timeX/</id>
-    <published>2018-12-19T08:21:00.000Z</published>
-    <updated>2020-08-21T02:57:01.410Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="求时间差函数"><a href="#求时间差函数" class="headerlink" title="求时间差函数"></a>求时间差函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s1 = <span class="string">'2017-02-26'</span>;  <span class="comment">//起始日期</span></span><br><span class="line"><span class="keyword">var</span> s2 = <span class="string">'2017-03-02'</span>;  <span class="comment">//结束日期</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = DateDiff(s1,s2);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span>  <span class="title">DateDiff</span>(<span class="params">sDate1,  sDate2</span>)</span>&#123;    <span class="comment">//sDate1和sDate2是2002-12-18格式  </span></span><br><span class="line">       <span class="keyword">var</span>  aDate,  oDate1,  oDate2,  iDays  </span><br><span class="line">       aDate  =  sDate1.split(<span class="string">"-"</span>)  </span><br><span class="line">       oDate1  =  <span class="keyword">new</span>  <span class="built_in">Date</span>(aDate[<span class="number">1</span>]   +  aDate[<span class="number">2</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">0</span>])    <span class="comment">//转换为12-18-2002格式  </span></span><br><span class="line">       aDate  =  sDate2.split(<span class="string">"-"</span>)  </span><br><span class="line">       oDate2  =  <span class="keyword">new</span>  <span class="built_in">Date</span>(aDate[<span class="number">1</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">2</span>]  +  <span class="string">'-'</span>  +  aDate[<span class="number">0</span>])  </span><br><span class="line">       iDays  =  <span class="built_in">parseInt</span>(<span class="built_in">Math</span>.abs(oDate1  -  oDate2)  /  <span class="number">1000</span>  /  <span class="number">60</span>  /  <span class="number">60</span>  /<span class="number">24</span>)    <span class="comment">//把相差的毫秒数转换为天数  </span></span><br><span class="line">       <span class="keyword">return</span>  iDays  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;求时间差函数&quot;&gt;&lt;a href=&quot;#求时间差函数&quot; class=&quot;headerlink&quot; title=&quot;求时间差函数&quot;&gt;&lt;/a&gt;求时间差函数&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class
-      
-    
-    </summary>
-    
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
-    
-    
-      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
     
   </entry>
   
