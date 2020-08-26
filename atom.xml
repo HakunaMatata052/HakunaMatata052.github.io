@@ -5,9 +5,9 @@
   <subtitle>Dobby is a free elf!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://hakunamatata052.github.io/"/>
+  <link href="https://hakunamatata052.github.io/"/>
   <updated>2020-08-26T08:57:15.870Z</updated>
-  <id>http://hakunamatata052.github.io/</id>
+  <id>https://hakunamatata052.github.io/</id>
   
   <author>
     <name>Hakunamatata</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Three.js设置DIV跟随场景的两种方法</title>
-    <link href="http://hakunamatata052.github.io/2020/08/26/three-sprite-css2d/"/>
-    <id>http://hakunamatata052.github.io/2020/08/26/three-sprite-css2d/</id>
+    <link href="https://hakunamatata052.github.io/2020/08/26/three-sprite-css2d/"/>
+    <id>https://hakunamatata052.github.io/2020/08/26/three-sprite-css2d/</id>
     <published>2020-08-26T07:39:00.000Z</published>
     <updated>2020-08-26T08:57:15.870Z</updated>
     
@@ -33,23 +33,23 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="three.js" scheme="http://hakunamatata052.github.io/categories/JS/three-js/"/>
+      <category term="three.js" scheme="https://hakunamatata052.github.io/categories/JS/three-js/"/>
     
     
-      <category term="three.js" scheme="http://hakunamatata052.github.io/tags/three-js/"/>
+      <category term="three.js" scheme="https://hakunamatata052.github.io/tags/three-js/"/>
     
-      <category term="threejs" scheme="http://hakunamatata052.github.io/tags/threejs/"/>
+      <category term="threejs" scheme="https://hakunamatata052.github.io/tags/threejs/"/>
     
-      <category term="three" scheme="http://hakunamatata052.github.io/tags/three/"/>
+      <category term="three" scheme="https://hakunamatata052.github.io/tags/three/"/>
     
   </entry>
   
   <entry>
     <title>当年的元歌比露娜还秀</title>
-    <link href="http://hakunamatata052.github.io/2020/08/25/yuange/"/>
-    <id>http://hakunamatata052.github.io/2020/08/25/yuange/</id>
+    <link href="https://hakunamatata052.github.io/2020/08/25/yuange/"/>
+    <id>https://hakunamatata052.github.io/2020/08/25/yuange/</id>
     <published>2020-08-25T08:25:36.000Z</published>
     <updated>2020-08-26T07:38:09.000Z</updated>
     
@@ -64,17 +64,17 @@
     
     </summary>
     
-      <category term="日常" scheme="http://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="https://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-      <category term="元歌 王者荣耀" scheme="http://hakunamatata052.github.io/tags/%E5%85%83%E6%AD%8C-%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/"/>
+      <category term="元歌 王者荣耀" scheme="https://hakunamatata052.github.io/tags/%E5%85%83%E6%AD%8C-%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/"/>
     
   </entry>
   
   <entry>
     <title>快速搭建webpack4.0+</title>
-    <link href="http://hakunamatata052.github.io/2020/08/25/webpack/"/>
-    <id>http://hakunamatata052.github.io/2020/08/25/webpack/</id>
+    <link href="https://hakunamatata052.github.io/2020/08/25/webpack/"/>
+    <id>https://hakunamatata052.github.io/2020/08/25/webpack/</id>
     <published>2020-08-25T06:14:00.000Z</published>
     <updated>2020-08-25T08:43:36.821Z</updated>
     
@@ -89,19 +89,19 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="webpack" scheme="http://hakunamatata052.github.io/categories/JS/webpack/"/>
+      <category term="webpack" scheme="https://hakunamatata052.github.io/categories/JS/webpack/"/>
     
     
-      <category term="webpack" scheme="http://hakunamatata052.github.io/tags/webpack/"/>
+      <category term="webpack" scheme="https://hakunamatata052.github.io/tags/webpack/"/>
     
   </entry>
   
   <entry>
     <title>Promise和async/await</title>
-    <link href="http://hakunamatata052.github.io/2020/08/25/promise/"/>
-    <id>http://hakunamatata052.github.io/2020/08/25/promise/</id>
+    <link href="https://hakunamatata052.github.io/2020/08/25/promise/"/>
+    <id>https://hakunamatata052.github.io/2020/08/25/promise/</id>
     <published>2020-08-25T03:18:00.000Z</published>
     <updated>2020-08-25T07:45:35.517Z</updated>
     
@@ -114,17 +114,17 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
     
-      <category term="Promise async/await async await 同步异步 异步" scheme="http://hakunamatata052.github.io/tags/Promise-async-await-async-await-%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E5%BC%82%E6%AD%A5/"/>
+      <category term="Promise async/await async await 同步异步 异步" scheme="https://hakunamatata052.github.io/tags/Promise-async-await-async-await-%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E5%BC%82%E6%AD%A5/"/>
     
   </entry>
   
   <entry>
     <title>Three.js 入门</title>
-    <link href="http://hakunamatata052.github.io/2020/08/24/three.js/"/>
-    <id>http://hakunamatata052.github.io/2020/08/24/three.js/</id>
+    <link href="https://hakunamatata052.github.io/2020/08/24/three.js/"/>
+    <id>https://hakunamatata052.github.io/2020/08/24/three.js/</id>
     <published>2020-08-24T08:21:00.000Z</published>
     <updated>2020-08-26T07:39:38.689Z</updated>
     
@@ -138,23 +138,23 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="three.js" scheme="http://hakunamatata052.github.io/categories/JS/three-js/"/>
+      <category term="three.js" scheme="https://hakunamatata052.github.io/categories/JS/three-js/"/>
     
     
-      <category term="three.js" scheme="http://hakunamatata052.github.io/tags/three-js/"/>
+      <category term="three.js" scheme="https://hakunamatata052.github.io/tags/three-js/"/>
     
-      <category term="threejs" scheme="http://hakunamatata052.github.io/tags/threejs/"/>
+      <category term="threejs" scheme="https://hakunamatata052.github.io/tags/threejs/"/>
     
-      <category term="three" scheme="http://hakunamatata052.github.io/tags/three/"/>
+      <category term="three" scheme="https://hakunamatata052.github.io/tags/three/"/>
     
   </entry>
   
   <entry>
     <title>制作菱形图片遮罩</title>
-    <link href="http://hakunamatata052.github.io/2019/03/01/mark/"/>
-    <id>http://hakunamatata052.github.io/2019/03/01/mark/</id>
+    <link href="https://hakunamatata052.github.io/2019/03/01/mark/"/>
+    <id>https://hakunamatata052.github.io/2019/03/01/mark/</id>
     <published>2019-03-01T02:56:52.000Z</published>
     <updated>2020-08-21T02:57:01.406Z</updated>
     
@@ -168,17 +168,17 @@
     
     </summary>
     
-      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
+      <category term="CSS" scheme="https://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="CSS CSS3" scheme="http://hakunamatata052.github.io/tags/CSS-CSS3/"/>
+      <category term="CSS CSS3" scheme="https://hakunamatata052.github.io/tags/CSS-CSS3/"/>
     
   </entry>
   
   <entry>
     <title>科学上网（翻墙）神器【蓝灯】</title>
-    <link href="http://hakunamatata052.github.io/2019/01/21/lantern/"/>
-    <id>http://hakunamatata052.github.io/2019/01/21/lantern/</id>
+    <link href="https://hakunamatata052.github.io/2019/01/21/lantern/"/>
+    <id>https://hakunamatata052.github.io/2019/01/21/lantern/</id>
     <published>2019-01-21T01:08:46.000Z</published>
     <updated>2020-08-21T02:57:01.402Z</updated>
     
@@ -191,16 +191,16 @@
     </summary>
     
     
-      <category term="科学上网" scheme="http://hakunamatata052.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="https://hakunamatata052.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="翻墙" scheme="http://hakunamatata052.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+      <category term="翻墙" scheme="https://hakunamatata052.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
     
   </entry>
   
   <entry>
     <title>一句代码解决bootstrap栅格几个设置5等分</title>
-    <link href="http://hakunamatata052.github.io/2019/01/04/bootstrap-offset/"/>
-    <id>http://hakunamatata052.github.io/2019/01/04/bootstrap-offset/</id>
+    <link href="https://hakunamatata052.github.io/2019/01/04/bootstrap-offset/"/>
+    <id>https://hakunamatata052.github.io/2019/01/04/bootstrap-offset/</id>
     <published>2019-01-04T07:45:01.000Z</published>
     <updated>2020-08-21T02:57:01.360Z</updated>
     
@@ -215,21 +215,21 @@
     
     </summary>
     
-      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
+      <category term="HTML" scheme="https://hakunamatata052.github.io/categories/HTML/"/>
     
-      <category term="BOOTSTRAP" scheme="http://hakunamatata052.github.io/categories/HTML/BOOTSTRAP/"/>
+      <category term="BOOTSTRAP" scheme="https://hakunamatata052.github.io/categories/HTML/BOOTSTRAP/"/>
     
     
-      <category term="bootstrap" scheme="http://hakunamatata052.github.io/tags/bootstrap/"/>
+      <category term="bootstrap" scheme="https://hakunamatata052.github.io/tags/bootstrap/"/>
     
-      <category term="offset" scheme="http://hakunamatata052.github.io/tags/offset/"/>
+      <category term="offset" scheme="https://hakunamatata052.github.io/tags/offset/"/>
     
   </entry>
   
   <entry>
     <title>This is dobby!</title>
-    <link href="http://hakunamatata052.github.io/2019/01/03/dobby/"/>
-    <id>http://hakunamatata052.github.io/2019/01/03/dobby/</id>
+    <link href="https://hakunamatata052.github.io/2019/01/03/dobby/"/>
+    <id>https://hakunamatata052.github.io/2019/01/03/dobby/</id>
     <published>2019-01-03T09:22:09.000Z</published>
     <updated>2020-08-26T07:38:03.403Z</updated>
     
@@ -244,15 +244,15 @@
     
     </summary>
     
-      <category term="日常" scheme="http://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
+      <category term="日常" scheme="https://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
   </entry>
   
   <entry>
     <title>如何使用fonts.googleapis.com使自己的网站增加更多字体</title>
-    <link href="http://hakunamatata052.github.io/2019/01/02/fonts-googleapis/"/>
-    <id>http://hakunamatata052.github.io/2019/01/02/fonts-googleapis/</id>
+    <link href="https://hakunamatata052.github.io/2019/01/02/fonts-googleapis/"/>
+    <id>https://hakunamatata052.github.io/2019/01/02/fonts-googleapis/</id>
     <published>2019-01-02T09:04:17.000Z</published>
     <updated>2020-08-21T02:57:01.369Z</updated>
     
@@ -264,19 +264,19 @@
     
     </summary>
     
-      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
+      <category term="HTML" scheme="https://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="googleapis" scheme="http://hakunamatata052.github.io/tags/googleapis/"/>
+      <category term="googleapis" scheme="https://hakunamatata052.github.io/tags/googleapis/"/>
     
-      <category term="字体" scheme="http://hakunamatata052.github.io/tags/%E5%AD%97%E4%BD%93/"/>
+      <category term="字体" scheme="https://hakunamatata052.github.io/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
   <entry>
     <title>Hexo添加置顶功能和标识</title>
-    <link href="http://hakunamatata052.github.io/2018/12/29/hexo-top/"/>
-    <id>http://hakunamatata052.github.io/2018/12/29/hexo-top/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/29/hexo-top/"/>
+    <id>https://hakunamatata052.github.io/2018/12/29/hexo-top/</id>
     <published>2018-12-29T09:29:09.000Z</published>
     <updated>2020-08-21T02:57:01.376Z</updated>
     
@@ -288,19 +288,19 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://hakunamatata052.github.io/categories/hexo/"/>
+      <category term="hexo" scheme="https://hakunamatata052.github.io/categories/hexo/"/>
     
     
-      <category term="Hexo" scheme="http://hakunamatata052.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="https://hakunamatata052.github.io/tags/Hexo/"/>
     
-      <category term="next" scheme="http://hakunamatata052.github.io/tags/next/"/>
+      <category term="next" scheme="https://hakunamatata052.github.io/tags/next/"/>
     
   </entry>
   
   <entry>
     <title>利用iconfont.cn快速制作前端图标</title>
-    <link href="http://hakunamatata052.github.io/2018/12/22/iconfont/"/>
-    <id>http://hakunamatata052.github.io/2018/12/22/iconfont/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/22/iconfont/"/>
+    <id>https://hakunamatata052.github.io/2018/12/22/iconfont/</id>
     <published>2018-12-22T02:28:36.000Z</published>
     <updated>2020-08-21T02:57:01.378Z</updated>
     
@@ -314,19 +314,19 @@
     
     </summary>
     
-      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
+      <category term="HTML" scheme="https://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="inconfont" scheme="http://hakunamatata052.github.io/tags/inconfont/"/>
+      <category term="inconfont" scheme="https://hakunamatata052.github.io/tags/inconfont/"/>
     
-      <category term="图标" scheme="http://hakunamatata052.github.io/tags/%E5%9B%BE%E6%A0%87/"/>
+      <category term="图标" scheme="https://hakunamatata052.github.io/tags/%E5%9B%BE%E6%A0%87/"/>
     
   </entry>
   
   <entry>
     <title>利用Github上传并引用video资源</title>
-    <link href="http://hakunamatata052.github.io/2018/12/21/github-video/"/>
-    <id>http://hakunamatata052.github.io/2018/12/21/github-video/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/21/github-video/"/>
+    <id>https://hakunamatata052.github.io/2018/12/21/github-video/</id>
     <published>2018-12-21T07:56:58.000Z</published>
     <updated>2020-08-21T02:57:01.370Z</updated>
     
@@ -340,17 +340,17 @@
     
     </summary>
     
-      <category term="HTML" scheme="http://hakunamatata052.github.io/categories/HTML/"/>
+      <category term="HTML" scheme="https://hakunamatata052.github.io/categories/HTML/"/>
     
     
-      <category term="github" scheme="http://hakunamatata052.github.io/tags/github/"/>
+      <category term="github" scheme="https://hakunamatata052.github.io/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>Vue全局公用函数</title>
-    <link href="http://hakunamatata052.github.io/2018/12/21/vue-global-function/"/>
-    <id>http://hakunamatata052.github.io/2018/12/21/vue-global-function/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/21/vue-global-function/"/>
+    <id>https://hakunamatata052.github.io/2018/12/21/vue-global-function/</id>
     <published>2018-12-21T03:00:29.000Z</published>
     <updated>2020-08-21T02:57:01.411Z</updated>
     
@@ -364,19 +364,19 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="VUE" scheme="http://hakunamatata052.github.io/categories/JS/VUE/"/>
+      <category term="VUE" scheme="https://hakunamatata052.github.io/categories/JS/VUE/"/>
     
     
-      <category term="vue" scheme="http://hakunamatata052.github.io/tags/vue/"/>
+      <category term="vue" scheme="https://hakunamatata052.github.io/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>无JS实现在线客服的切换效果</title>
-    <link href="http://hakunamatata052.github.io/2018/12/20/nojs-toggle/"/>
-    <id>http://hakunamatata052.github.io/2018/12/20/nojs-toggle/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/20/nojs-toggle/"/>
+    <id>https://hakunamatata052.github.io/2018/12/20/nojs-toggle/</id>
     <published>2018-12-20T07:05:17.000Z</published>
     <updated>2020-08-25T06:12:06.026Z</updated>
     
@@ -390,19 +390,19 @@
     
     </summary>
     
-      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
+      <category term="CSS" scheme="https://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="css3" scheme="http://hakunamatata052.github.io/tags/css3/"/>
+      <category term="css3" scheme="https://hakunamatata052.github.io/tags/css3/"/>
     
-      <category term="css" scheme="http://hakunamatata052.github.io/tags/css/"/>
+      <category term="css" scheme="https://hakunamatata052.github.io/tags/css/"/>
     
   </entry>
   
   <entry>
     <title>javascript思维导图</title>
-    <link href="http://hakunamatata052.github.io/2018/12/20/js-mind-map/"/>
-    <id>http://hakunamatata052.github.io/2018/12/20/js-mind-map/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/20/js-mind-map/"/>
+    <id>https://hakunamatata052.github.io/2018/12/20/js-mind-map/</id>
     <published>2018-12-20T00:40:43.000Z</published>
     <updated>2020-08-21T02:57:01.384Z</updated>
     
@@ -414,19 +414,19 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
     
-      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
+      <category term="js" scheme="https://hakunamatata052.github.io/tags/js/"/>
     
-      <category term="javascript" scheme="http://hakunamatata052.github.io/tags/javascript/"/>
+      <category term="javascript" scheme="https://hakunamatata052.github.io/tags/javascript/"/>
     
   </entry>
   
   <entry>
     <title>PNG格式小图标的CSS任意颜色赋色技术</title>
-    <link href="http://hakunamatata052.github.io/2018/12/19/css3-add-color/"/>
-    <id>http://hakunamatata052.github.io/2018/12/19/css3-add-color/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/19/css3-add-color/"/>
+    <id>https://hakunamatata052.github.io/2018/12/19/css3-add-color/</id>
     <published>2018-12-19T09:50:12.000Z</published>
     <updated>2020-08-21T02:57:01.360Z</updated>
     
@@ -438,17 +438,17 @@
     
     </summary>
     
-      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
+      <category term="CSS" scheme="https://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="css3" scheme="http://hakunamatata052.github.io/tags/css3/"/>
+      <category term="css3" scheme="https://hakunamatata052.github.io/tags/css3/"/>
     
   </entry>
   
   <entry>
     <title>css3曲线投影</title>
-    <link href="http://hakunamatata052.github.io/2018/12/19/css3-curve-shadow/"/>
-    <id>http://hakunamatata052.github.io/2018/12/19/css3-curve-shadow/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/19/css3-curve-shadow/"/>
+    <id>https://hakunamatata052.github.io/2018/12/19/css3-curve-shadow/</id>
     <published>2018-12-19T09:38:12.000Z</published>
     <updated>2020-08-21T02:57:01.360Z</updated>
     
@@ -460,19 +460,19 @@
     
     </summary>
     
-      <category term="CSS" scheme="http://hakunamatata052.github.io/categories/CSS/"/>
+      <category term="CSS" scheme="https://hakunamatata052.github.io/categories/CSS/"/>
     
     
-      <category term="css3" scheme="http://hakunamatata052.github.io/tags/css3/"/>
+      <category term="css3" scheme="https://hakunamatata052.github.io/tags/css3/"/>
     
-      <category term="css" scheme="http://hakunamatata052.github.io/tags/css/"/>
+      <category term="css" scheme="https://hakunamatata052.github.io/tags/css/"/>
     
   </entry>
   
   <entry>
     <title>jQueryAjax请求完全版</title>
-    <link href="http://hakunamatata052.github.io/2018/12/19/jquery-ajax/"/>
-    <id>http://hakunamatata052.github.io/2018/12/19/jquery-ajax/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/19/jquery-ajax/"/>
+    <id>https://hakunamatata052.github.io/2018/12/19/jquery-ajax/</id>
     <published>2018-12-19T09:34:07.000Z</published>
     <updated>2020-08-21T02:57:01.383Z</updated>
     
@@ -487,21 +487,21 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="jQuery" scheme="http://hakunamatata052.github.io/categories/JS/jQuery/"/>
+      <category term="jQuery" scheme="https://hakunamatata052.github.io/categories/JS/jQuery/"/>
     
     
-      <category term="js" scheme="http://hakunamatata052.github.io/tags/js/"/>
+      <category term="js" scheme="https://hakunamatata052.github.io/tags/js/"/>
     
-      <category term="jquery" scheme="http://hakunamatata052.github.io/tags/jquery/"/>
+      <category term="jquery" scheme="https://hakunamatata052.github.io/tags/jquery/"/>
     
   </entry>
   
   <entry>
     <title>Vuex的使用</title>
-    <link href="http://hakunamatata052.github.io/2018/12/19/vuex/"/>
-    <id>http://hakunamatata052.github.io/2018/12/19/vuex/</id>
+    <link href="https://hakunamatata052.github.io/2018/12/19/vuex/"/>
+    <id>https://hakunamatata052.github.io/2018/12/19/vuex/</id>
     <published>2018-12-19T08:25:36.000Z</published>
     <updated>2020-08-25T09:28:44.238Z</updated>
     
@@ -513,14 +513,14 @@
     
     </summary>
     
-      <category term="JS" scheme="http://hakunamatata052.github.io/categories/JS/"/>
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
     
-      <category term="VUE" scheme="http://hakunamatata052.github.io/categories/JS/VUE/"/>
+      <category term="VUE" scheme="https://hakunamatata052.github.io/categories/JS/VUE/"/>
     
     
-      <category term="vue" scheme="http://hakunamatata052.github.io/tags/vue/"/>
+      <category term="vue" scheme="https://hakunamatata052.github.io/tags/vue/"/>
     
-      <category term="vuex" scheme="http://hakunamatata052.github.io/tags/vuex/"/>
+      <category term="vuex" scheme="https://hakunamatata052.github.io/tags/vuex/"/>
     
   </entry>
   
