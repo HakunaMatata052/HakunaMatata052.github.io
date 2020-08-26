@@ -147,7 +147,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <meta property="og:site_name" content="Dobby">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://hakunamatata052.github.io/images/01.jpg">
-<meta property="og:updated_time" content="2020-08-21T02:57:01.411Z">
+<meta property="og:updated_time" content="2020-08-25T09:28:44.238Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Vuex的使用">
 <meta name="twitter:image" content="http://hakunamatata052.github.io/images/01.jpg">
@@ -548,7 +548,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-08-21 10:57:01" itemprop="dateModified" datetime="2020-08-21T10:57:01+08:00">2020-08-21</time>
+                <time title="修改时间：2020-08-25 17:28:44" itemprop="dateModified" datetime="2020-08-25T17:28:44+08:00">2020-08-25</time>
               
             
           </span>
@@ -634,7 +634,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 </blockquote>
 <h3 id="新建js文件"><a href="#新建js文件" class="headerlink" title="新建js文件"></a>新建js文件</h3><p>可以放在store文件夹中命名为index.js</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> vuex <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line">Vue.use(vuex);</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> vuex.Store(&#123;</span><br><span class="line">	state: &#123;</span><br><span class="line">		api:<span class="string">'http://wjdh03.sjgogo.cn/api/'</span>,</span><br><span class="line">		token:<span class="string">"57373A7E05CB44079B2F12C14A5E83A9"</span>,</span><br><span class="line">		domain: <span class="string">"http://www.baidu.com"</span>,</span><br><span class="line">		notice: <span class="literal">true</span>,</span><br><span class="line">	&#125;,</span><br><span class="line">	mutations: &#123;</span><br><span class="line">		domainURI(url) &#123;</span><br><span class="line">			<span class="keyword">var</span> durl = <span class="regexp">/http:\/\/([^\/]+)\//i</span>;</span><br><span class="line">			<span class="keyword">var</span> domain = url.match(durl);</span><br><span class="line">			<span class="keyword">return</span> domain[<span class="number">1</span>];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="调用Vuex"><a href="#调用Vuex" class="headerlink" title="调用Vuex"></a>调用Vuex</h4><p>main.js中引入Vuex并使用</p>
+<h3 id="调用Vuex"><a href="#调用Vuex" class="headerlink" title="调用Vuex"></a>调用Vuex</h3><p>main.js中引入Vuex并使用</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">'./store'</span>  <span class="comment">//引入Vuex</span></span><br></pre></td></tr></table></figure>
 <p>载入Vuex<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> vue = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,   <span class="comment">//载入Vuex</span></span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;).$mount(<span class="string">'#app'</span>)</span><br></pre></td></tr></table></figure></p>
 <h3 id="使用全局状态（变量）"><a href="#使用全局状态（变量）" class="headerlink" title="使用全局状态（变量）"></a>使用全局状态（变量）</h3><p>在需要使用的组件中 使用调用</p>
@@ -823,7 +823,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -925,7 +925,11 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                     
                       
                     
-                    <span class="site-state-item-count">28</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1038,7 +1042,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vuex的使用"><span class="nav-number">1.</span> <span class="nav-text">Vuex的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Vuex"><span class="nav-number">1.1.</span> <span class="nav-text">安装Vuex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建js文件"><span class="nav-number">1.2.</span> <span class="nav-text">新建js文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#调用Vuex"><span class="nav-number">1.2.1.</span> <span class="nav-text">调用Vuex</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用全局状态（变量）"><span class="nav-number">1.3.</span> <span class="nav-text">使用全局状态（变量）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vuex的使用"><span class="nav-number">1.</span> <span class="nav-text">Vuex的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Vuex"><span class="nav-number">1.1.</span> <span class="nav-text">安装Vuex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新建js文件"><span class="nav-number">1.2.</span> <span class="nav-text">新建js文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用Vuex"><span class="nav-number">1.3.</span> <span class="nav-text">调用Vuex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用全局状态（变量）"><span class="nav-number">1.4.</span> <span class="nav-text">使用全局状态（变量）</span></a></li></ol></li></ol></div>
             
 
           </div>
