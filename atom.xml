@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hakunamatata052.github.io/"/>
-  <updated>2020-08-26T08:57:15.870Z</updated>
+  <updated>2020-08-31T02:36:17.494Z</updated>
   <id>https://hakunamatata052.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html转jsx</title>
+    <link href="https://hakunamatata052.github.io/2020/08/31/html2jsx/"/>
+    <id>https://hakunamatata052.github.io/2020/08/31/html2jsx/</id>
+    <published>2020-08-31T02:18:00.000Z</published>
+    <updated>2020-08-31T02:36:17.494Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h1><p>之前做的一个阿里需求，是将原有的HTML的静态页面重构成前后分离的项目，要求是用dva-cli脚手架来开发<br>那么就牵扯到一个问题就是这么多的HTML页面肯定不能手动转成jsx语法啊。<br>毕竟差别还是有很多的，尤其是写div的类名<br>我们知道，在普通HTML中是这样写div和类名的<br><a id="more"></a><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"demo div1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p><p>但是在jsx语法中尤其是同一div上应用了多个类名，jsx写起来会很让热挠头<br><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div className=&#123;[styles.demo,styles.div1].join(<span class="string">' '</span>)&#125;&gt;&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p><p>于是乎就做了一个小工具，可以将html转换为jsx语法，这里需要注意一下styles是我引入的less后赋值的变量名<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> styles <span class="keyword">from</span> <span class="string">'../assets/css/index.css'</span></span><br></pre></td></tr></table></figure></p><h1 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h1><p>左边输入html点击转换会自动生成在右边的文本域中</p><iframe src="/2020/08/31/html2jsx/html2jsx.html" width="600" height="100" frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes"></iframe><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>这个小Demo的原理非常简单，就是通过正则匹配到所有<code>class=“”</code>里的内容，然后通过<code>replace</code>方法替换<br>值得注意的是<code>replace</code>方法的第二个参数可以传一个固定的字符串，也可以传一个函数，函数的返回值作为替换的内容<br>这里我们不能把类名替换成固定的值，而是需要将类名做处理，所有在<code>replace</code>第二个参数中传入一个函数，函数的参数，就是匹配到的内容<br>获得内容就很好办了，先把类名用空格拆分成数组，然后写个jsx中的格式即可</p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">submit</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> con = <span class="built_in">document</span>.getElementById(<span class="string">'text'</span>).value            </span><br><span class="line">    con = con.replace(<span class="regexp">/class=".*?"/ig</span>, value =&gt;&#123;</span><br><span class="line">        value = value.replace(<span class="string">'class="'</span>,<span class="string">''</span>).replace(<span class="string">'"'</span>,<span class="string">''</span>)</span><br><span class="line">        value = value.split(<span class="string">' '</span>)</span><br><span class="line">        <span class="built_in">console</span>.log(value)</span><br><span class="line">        <span class="keyword">if</span>(value.length&gt;<span class="number">1</span>)&#123;</span><br><span class="line">            value = value.map(<span class="function"><span class="params">item</span>=&gt;</span><span class="string">`styles.<span class="subst">$&#123;item&#125;</span>`</span>)</span><br><span class="line">            value = <span class="string">`[<span class="subst">$&#123;value.join(<span class="string">','</span>)&#125;</span>].join(' ')`</span></span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            value = <span class="string">`styles.<span class="subst">$&#123;value&#125;</span>`</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">`className=&#123;<span class="subst">$&#123;value&#125;</span>&#125;`</span></span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">'text2'</span>).value = con</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;初衷&quot;&gt;&lt;a href=&quot;#初衷&quot; class=&quot;headerlink&quot; title=&quot;初衷&quot;&gt;&lt;/a&gt;初衷&lt;/h1&gt;&lt;p&gt;之前做的一个阿里需求，是将原有的HTML的静态页面重构成前后分离的项目，要求是用dva-cli脚手架来开发&lt;br&gt;那么就牵扯到一个问题就是这么多的HTML页面肯定不能手动转成jsx语法啊。&lt;br&gt;毕竟差别还是有很多的，尤其是写div的类名&lt;br&gt;我们知道，在普通HTML中是这样写div和类名的&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
+    
+      <category term="react" scheme="https://hakunamatata052.github.io/categories/JS/react/"/>
+    
+    
+      <category term="react jsx" scheme="https://hakunamatata052.github.io/tags/react-jsx/"/>
+    
+  </entry>
   
   <entry>
     <title>Three.js设置DIV跟随场景的两种方法</title>
@@ -495,32 +519,6 @@
       <category term="js" scheme="https://hakunamatata052.github.io/tags/js/"/>
     
       <category term="jquery" scheme="https://hakunamatata052.github.io/tags/jquery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vuex的使用</title>
-    <link href="https://hakunamatata052.github.io/2018/12/19/vuex/"/>
-    <id>https://hakunamatata052.github.io/2018/12/19/vuex/</id>
-    <published>2018-12-19T08:25:36.000Z</published>
-    <updated>2020-08-25T09:28:44.238Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/01.jpg" alt="VUEX"><br><a id="more"></a></p><h2 id="Vuex的使用"><a href="#Vuex的使用" class="headerlink" title="Vuex的使用"></a>Vuex的使用</h2><h3 id="安装Vuex"><a href="#安装Vuex" class="headerlink" title="安装Vuex"></a>安装Vuex</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install vuex --save</span><br></pre></td></tr></table></figure><blockquote><p>淘宝镜像<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vuex --save</span><br></pre></td></tr></table></figure></p></blockquote><h3 id="新建js文件"><a href="#新建js文件" class="headerlink" title="新建js文件"></a>新建js文件</h3><p>可以放在store文件夹中命名为index.js</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> vuex <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line">Vue.use(vuex);</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> vuex.Store(&#123;</span><br><span class="line">state: &#123;</span><br><span class="line">api:<span class="string">'http://wjdh03.sjgogo.cn/api/'</span>,</span><br><span class="line">token:<span class="string">"57373A7E05CB44079B2F12C14A5E83A9"</span>,</span><br><span class="line">domain: <span class="string">"http://www.baidu.com"</span>,</span><br><span class="line">notice: <span class="literal">true</span>,</span><br><span class="line">&#125;,</span><br><span class="line">mutations: &#123;</span><br><span class="line">domainURI(url) &#123;</span><br><span class="line"><span class="keyword">var</span> durl = <span class="regexp">/http:\/\/([^\/]+)\//i</span>;</span><br><span class="line"><span class="keyword">var</span> domain = url.match(durl);</span><br><span class="line"><span class="keyword">return</span> domain[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="调用Vuex"><a href="#调用Vuex" class="headerlink" title="调用Vuex"></a>调用Vuex</h3><p>main.js中引入Vuex并使用</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">'./store'</span>  <span class="comment">//引入Vuex</span></span><br></pre></td></tr></table></figure><p>载入Vuex<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> vue = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  router,</span><br><span class="line">  store,   <span class="comment">//载入Vuex</span></span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App)</span><br><span class="line">&#125;).$mount(<span class="string">'#app'</span>)</span><br></pre></td></tr></table></figure></p><h3 id="使用全局状态（变量）"><a href="#使用全局状态（变量）" class="headerlink" title="使用全局状态（变量）"></a>使用全局状态（变量）</h3><p>在需要使用的组件中 使用调用</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/01.jpg&quot; alt=&quot;VUEX&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
-    
-      <category term="VUE" scheme="https://hakunamatata052.github.io/categories/JS/VUE/"/>
-    
-    
-      <category term="vue" scheme="https://hakunamatata052.github.io/tags/vue/"/>
-    
-      <category term="vuex" scheme="https://hakunamatata052.github.io/tags/vuex/"/>
     
   </entry>
   
