@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="img" id="img"><img src="https://picsum.photos/300/300">
+        <div class="shadow" id="shadow"></div>
+    </div>
+
+    <button id="show">显示多余内容</button>
+    <button id="hide">隐藏多余内容</button>
+    <style>
+        .img {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .shadow {
+            width: 200px;
+            height: 200px;
+            box-shadow: 0px 0px 0px 120px #fff;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            border-radius: 10px;
+        }
+
+        .img img {}
+
+    </style>
+    <script>
+        document.getElementById('show').onclick = function () {
+            document.getElementById('img').style.overflow = 'visible';
+            document.getElementById('shadow').style.boxShadow = '0px 0px 0px 120px #333'
+        }
+        document.getElementById('hide').onclick = function () {
+            document.getElementById('img').style.overflow = 'hidden';
+            document.getElementById('shadow').style.boxShadow = '0px 0px 0px 120px #fff'
+        }
+
+    </script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":2,"width":320,"height":500,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":1},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+
+</html>
