@@ -150,7 +150,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://hakunamatata052.github.io/images/WX20210312-111605@2x.png">
 <meta property="og:image" content="https://hakunamatata052.github.io/images/WX20210312-112000@2x.png">
-<meta property="og:updated_time" content="2021-03-12T06:09:46.291Z">
+<meta property="og:updated_time" content="2021-04-16T02:02:53.932Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用uniapp打包H5时使用微信SDK">
 <meta name="twitter:description" content="起因原本的一个需求是开发微信小程序，但是因为产品变更需求，需要重新改为H5，为了重构页面和前端逻辑不做太大改动，所以决定先把小程序改为uniapp，在用uniapp打包为H5因为uniapp里的方法和小程序类似，所以代码复用率高。有了思路之后就开始着手进行。">
@@ -552,7 +552,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2021-03-12 14:09:46" itemprop="dateModified" datetime="2021-03-12T14:09:46+08:00">2021-03-12</time>
+                <time title="修改时间：2021-04-16 10:02:53" itemprop="dateModified" datetime="2021-04-16T10:02:53+08:00">2021-04-16</time>
               
             
           </span>
@@ -644,7 +644,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <h3 id="引入微信SDK"><a href="#引入微信SDK" class="headerlink" title="引入微信SDK"></a>引入微信SDK</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://res.wx.qq.com/open/js/jweixin-1.2.0.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>然后在你需要调用的组建里配置微信SDK<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">wx.config(&#123;</span><br><span class="line">    debug: <span class="literal">true</span>, <span class="comment">// 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。</span></span><br><span class="line">    appId: <span class="string">''</span>, <span class="comment">// 必填，企业号的唯一标识，此处填写企业号corpid</span></span><br><span class="line">    timestamp: , <span class="comment">// 必填，生成签名的时间戳</span></span><br><span class="line">    nonceStr: <span class="string">''</span>, <span class="comment">// 必填，生成签名的随机串</span></span><br><span class="line">    signature: <span class="string">''</span>,<span class="comment">// 必填，签名，见附录1</span></span><br><span class="line">    jsApiList: [] <span class="comment">// 必填，需要使用的JS接口列表，所有JS接口列表见附录2</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>这个时候问题就来了！<br>执行会发现<code>wx</code>对象中没有<code>config</code>方法,但是wx对象是存在的？</p>
-<h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>原来是因为uniapp中已经想window中声明了一个wx变量，这个wx变量是小程序的wx对象而不是微信SDK的。<br>因为uniapp在打包时将<code>app.js</code>打包在了<code>&lt;/body&gt;</code>之前，所以我们引入的微信SDK的变量被uniapp的覆盖了。</p>
+<h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>原来是因为uniapp中已经向window中声明了一个wx变量，这个wx变量是小程序的wx对象而不是微信SDK的。<br>因为uniapp在打包时将<code>app.js</code>打包在了<code>&lt;/body&gt;</code>之前，所以我们引入的微信SDK的变量被uniapp的覆盖了。</p>
 <h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>找到原因就好办了，直接将SDK在<code>&lt;/body&gt;</code>之后<code>&lt;/html&gt;</code>之前引入。</p>
 <p>再跑一下，完美解决！</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这里找问题原因花了很长时间，因为引入js方式，登录态检测这些我都简化叙述了，还用到了各种抓包，本地代理线上文件。但是思路就是遇到问题可以想想多种解决方案，多打断点，多console。</p>
@@ -752,6 +752,10 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2021/04/16/cursor-position-insert/" rel="prev" title="小程序和H5中input在光标位置中插入">
+                小程序和H5中input在光标位置中插入 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -829,7 +833,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -866,7 +870,9 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -945,7 +951,11 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                     
                       
                     
-                    <span class="site-state-item-count">33</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

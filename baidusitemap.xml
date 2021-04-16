@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hakunamatata052.github.io/2021/04/16/cursor-position-insert/</loc>
+    <lastmod>2021-04-16</lastmod>
+  </url>
+  <url>
     <loc>https://hakunamatata052.github.io/2021/03/13/uniapp-wxSDK/</loc>
-    <lastmod>2021-03-12</lastmod>
+    <lastmod>2021-04-16</lastmod>
   </url>
   <url>
     <loc>https://hakunamatata052.github.io/2020/08/25/promise/</loc>
@@ -69,11 +73,11 @@
     <lastmod>2020-08-21</lastmod>
   </url>
   <url>
-    <loc>https://hakunamatata052.github.io/2018/12/19/jquery-ajax/</loc>
+    <loc>https://hakunamatata052.github.io/2018/12/22/iconfont/</loc>
     <lastmod>2020-08-21</lastmod>
   </url>
   <url>
-    <loc>https://hakunamatata052.github.io/2018/12/22/iconfont/</loc>
+    <loc>https://hakunamatata052.github.io/2018/12/19/jquery-ajax/</loc>
     <lastmod>2020-08-21</lastmod>
   </url>
   <url>
@@ -93,11 +97,11 @@
     <lastmod>2020-08-21</lastmod>
   </url>
   <url>
-    <loc>https://hakunamatata052.github.io/2018/12/19/timeX/</loc>
+    <loc>https://hakunamatata052.github.io/2018/12/21/vue-global-function/</loc>
     <lastmod>2020-08-21</lastmod>
   </url>
   <url>
-    <loc>https://hakunamatata052.github.io/2018/12/21/vue-global-function/</loc>
+    <loc>https://hakunamatata052.github.io/2018/12/19/timeX/</loc>
     <lastmod>2020-08-21</lastmod>
   </url>
 </urlset> 
