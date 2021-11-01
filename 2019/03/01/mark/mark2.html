@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .img {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .img img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: block;
+            width: 300px;
+            height: 300px;
+            margin-top: -150px;
+            margin-left: -150px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="img" id="img">
+        <img src="https://picsum.photos/300/300" alt id="pic">
+    </div>
+    
+    <button id="show">显示多余内容</button>
+    <button id="hide">隐藏多余内容</button>
+    
+    <script>
+            document.getElementById('show').onclick = function () {
+                document.getElementById('img').style.border = '1px solid #f00';
+                document.getElementById('img').style.overflow = 'visible';
+                document.getElementById('pic').style.border = '1px solid #f00';
+                document.getElementById('pic').style.opacity = '.5';
+            }
+            document.getElementById('hide').onclick = function () {
+                document.getElementById('img').style.border = '0';
+                document.getElementById('img').style.overflow = 'hidden';
+                document.getElementById('pic').style.border = '0';
+                document.getElementById('pic').style.opacity = '1';
+            }
+    
+        </script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":2,"width":320,"height":500,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":1},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>

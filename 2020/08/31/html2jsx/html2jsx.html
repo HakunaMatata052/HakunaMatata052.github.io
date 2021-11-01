@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<style>
+        html,body,.container{
+            height: 100%;
+        }
+		.container {
+			display:flex;
+		}
+		textarea {
+			flex-grow: 1;
+		}
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<textarea name id="text" cols="30"></textarea>
+		<button id="submit" onclick="submit()">转换</button>
+		<textarea name id="text2" cols="30"></textarea>
+	</div>
+    <script>
+        function submit(){
+            var con = document.getElementById('text').value
+            
+            con = con.replace(/class=".*?"/ig, value =>{
+                value = value.replace('class="','').replace('"','')
+                value = value.split(' ')
+                console.log(value)
+                if(value.length>1){
+                    value = value.map(item=>`styles.${item}`)
+                    value = `[${value.join(',')}].join(' ')`
+                }else{
+                    value = `styles.${value}`
+                }
+                return `className={${value}}`
+            });
+            document.getElementById('text2').value = con
+           console.log(con)
+        }
+    </script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":2,"width":320,"height":500,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":1},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+
+</html>
