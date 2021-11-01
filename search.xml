@@ -3,7 +3,7 @@
   <entry>
     <title>threeJs模型压缩、加载</title>
     <url>/2021/11/01/threejs-compress/</url>
-    <content><![CDATA[<h1 id="压缩模型"><a href="#压缩模型" class="headerlink" title="压缩模型"></a>压缩模型</h1><h2 id="安装压缩器"><a href="#安装压缩器" class="headerlink" title="安装压缩器"></a>安装压缩器</h2><p>全局安装gltf-pipeline<br>git地址：<code>https:://gitee.com/apis-cloud/gltf-pipeline.git</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo npm install -g gltf-pipeline</span><br></pre></td></tr></table></figure></p>
+    <content><![CDATA[<h1 id="压缩模型"><a href="#压缩模型" class="headerlink" title="压缩模型"></a>压缩模型</h1><h2 id="安装压缩器"><a href="#安装压缩器" class="headerlink" title="安装压缩器"></a>安装压缩器</h2><p>全局安装gltf-pipeline<br>git地址：<code>https://gitee.com/apis-cloud/gltf-pipeline.git</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo npm install -g gltf-pipeline</span><br></pre></td></tr></table></figure></p>
 <h3 id="转换格式"><a href="#转换格式" class="headerlink" title="转换格式"></a>转换格式</h3><p>如果是glb或fbx格式，首选需要转换格式glft，这个插件是自带格式转换的<br>在模型所在文件夹执行命令<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gltf-pipeline -i model.glb -j</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <h3 id="执行压缩"><a href="#执行压缩" class="headerlink" title="执行压缩"></a>执行压缩</h3><p>再执行压缩操作（model.gltf是转换格式后的文件名，modelDraco.gltf是压缩后的文件名）<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gltf-pipeline -i model.gltf -o modelDraco.gltf -d -s</span><br></pre></td></tr></table></figure></p>
