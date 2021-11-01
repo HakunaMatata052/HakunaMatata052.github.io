@@ -148,7 +148,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <meta property="og:site_name" content="Dobby">
 <meta property="og:description" content="压缩模型安装压缩器全局安装gltf-pipelinegit地址：https://gitee.com/apis-cloud/gltf-pipeline.git1sudo npm install -g gltf-pipeline 转换格式如果是glb或fbx格式，首选需要转换格式glft，这个插件是自带格式转换的在模型所在文件夹执行命令1gltf-pipeline -i model.glb -j">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-11-01T05:12:32.778Z">
+<meta property="og:updated_time" content="2021-11-01T07:46:38.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="threeJs模型压缩、加载">
 <meta name="twitter:description" content="压缩模型安装压缩器全局安装gltf-pipelinegit地址：https://gitee.com/apis-cloud/gltf-pipeline.git1sudo npm install -g gltf-pipeline 转换格式如果是glb或fbx格式，首选需要转换格式glft，这个插件是自带格式转换的在模型所在文件夹执行命令1gltf-pipeline -i model.glb -j">
@@ -532,7 +532,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
                 
               
 
-              <time title="创建时间：2021-11-01 12:00:00 / 修改时间：13:12:32" itemprop="dateCreated datePublished" datetime="2021-11-01T12:00:00+08:00">2021-11-01</time>
+              <time title="创建时间：2021-11-01 12:00:00 / 修改时间：15:46:38" itemprop="dateCreated datePublished" datetime="2021-11-01T12:00:00+08:00">2021-11-01</time>
             
 
             
@@ -626,7 +626,7 @@ console.log("%c ", "background: url(/images/avatar.jpg) no-repeat center;padding
 <li>modelDraco.bin</li>
 </ul>
 <p>将两个文件放在DRACOLoader指定的文件夹即可</p>
-<h1 id="导入模型"><a href="#导入模型" class="headerlink" title="导入模型"></a>导入模型</h1><p>最后使用DRACOLoader加载器加载压缩模型即可<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> loader = <span class="keyword">new</span> GLTFLoader(); <span class="comment">//创建模型加载器对象</span></span><br><span class="line"><span class="keyword">var</span> dracoloader = <span class="keyword">new</span> DRACOLoader();<span class="comment">//draco加载器(压缩模型解码器)</span></span><br><span class="line">loader.setDRACOLoader( dracoloader ); </span><br><span class="line">loader.load(<span class="string">"stl/modelDraco.gltf"</span>, gltf =&gt; &#123;</span><br><span class="line">    gltf.scene.scale.set(<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>);</span><br><span class="line">    gltf.scene.position.set(<span class="number">0</span>, <span class="number">-0.2</span>, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">this</span>.scene.add(gltf.scene);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h1 id="导入模型"><a href="#导入模型" class="headerlink" title="导入模型"></a>导入模型</h1><p>最后使用DRACOLoader加载器加载压缩模型即可<br><a href="/images/draco.zip">点击下载</a>WASM/JS解码库文件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> loader = <span class="keyword">new</span> GLTFLoader() <span class="comment">//创建模型加载器对象</span></span><br><span class="line"><span class="keyword">var</span> dracoloader = <span class="keyword">new</span> DRACOLoader() <span class="comment">//draco加载器(压缩模型解码器) </span></span><br><span class="line">dracoloader.setDecoderPath( <span class="string">'stl/'</span> ) <span class="comment">//指定包含WASM / JS解码库的文件夹的路径。</span></span><br><span class="line">loader.setDRACOLoader( dracoloader ) </span><br><span class="line">loader.load(<span class="string">"stl/modelDraco.gltf"</span>, gltf =&gt; &#123;</span><br><span class="line">    gltf.scene.scale.set(<span class="number">10</span>, <span class="number">10</span>, <span class="number">10</span>)</span><br><span class="line">    gltf.scene.position.set(<span class="number">0</span>, <span class="number">-0.2</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">this</span>.scene.add(gltf.scene)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
