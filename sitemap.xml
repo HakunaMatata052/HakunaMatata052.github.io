@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hakunamatata052.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-01-01T15:36:46.730Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hakunamatata052.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-01-01T15:27:41.700Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hakunamatata052.github.io/2018/12/19/css3-add-color/</loc>
     
     <lastmod>2022-01-01T08:15:25.449Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>https://hakunamatata052.github.io/2021/04/16/cursor-position-insert/</loc>
     
     <lastmod>2021-04-16T06:11:38.078Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hakunamatata052.github.io/categories/index.html</loc>
-    
-    <lastmod>2021-04-16T02:03:45.626Z</lastmod>
     
   </url>
   
@@ -220,13 +227,6 @@
   
   <url>
     <loc>https://hakunamatata052.github.io/comments/index.html</loc>
-    
-    <lastmod>2020-08-21T02:57:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hakunamatata052.github.io/tags/index.html</loc>
     
     <lastmod>2020-08-21T02:57:02.000Z</lastmod>
     
