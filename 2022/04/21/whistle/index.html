@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>whistle抓包工具 | 程序园-ICU</title>
+  <meta name="description" content="为什么要使用 1、方便在本地模拟修改线上资源 2、防止正式环境与开发环境代码各种资源路径、接口路径不同，导致上线未修改引用的是本地资源 3、可以在真机上审查元素，重构问题一目了然 4、mock数据 5、待补充  如何使用安装Whistle【抓包工具】123npm i whistle -g&#x2F;&#x2F; 或yarn add global whistle 启动whistle1w2 start 终端代理whist">
+<meta property="og:type" content="article">
+<meta property="og:title" content="whistle抓包工具">
+<meta property="og:url" content="https://hakunamatata052.github.io/2022/04/21/whistle/index.html">
+<meta property="og:site_name" content="程序园-ICU">
+<meta property="og:description" content="为什么要使用 1、方便在本地模拟修改线上资源 2、防止正式环境与开发环境代码各种资源路径、接口路径不同，导致上线未修改引用的是本地资源 3、可以在真机上审查元素，重构问题一目了然 4、mock数据 5、待补充  如何使用安装Whistle【抓包工具】123npm i whistle -g&#x2F;&#x2F; 或yarn add global whistle 启动whistle1w2 start 终端代理whist">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-155500.png">
+<meta property="og:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-160441.png">
+<meta property="og:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-160811.png">
+<meta property="og:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-161644.png">
+<meta property="og:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-163049.png">
+<meta property="og:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-163213.png">
+<meta property="article:published_time" content="2022-04-21T04:03:36.000Z">
+<meta property="article:modified_time" content="2022-04-21T06:06:43.115Z">
+<meta property="article:author" content="Hakunamatata">
+<meta property="article:tag" content="whistle 代理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hakunamatata052.github.io/2022/04/21/whistle/WX20220420-155500.png">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hakunamatata052.github.io/2022/04/21/whistle/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="程序园-ICU" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://www.cxy2icu.com" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">程序园-ICU</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">程序猿的重点-ICU!</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shannxi xi‘an, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/hakunamatata052" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/534104568/" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>程序猿的终极目标-ICU！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/BOOTSTRAP/">BOOTSTRAP</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/">JS</a><span class="category-list-count">15</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/JS/VUE/">VUE</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/jQuery/">jQuery</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/mimiapp/">mimiapp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/miniapp/">miniapp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/react/">react</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/three-js/">three.js</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/uniapp/">uniapp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JS/webpack/">webpack</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/vscode/">vscode</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Array/" rel="tag">Array</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS-CSS3/" rel="tag">CSS CSS3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Promise-async-await-async-await-%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E5%BC%82%E6%AD%A5/" rel="tag">Promise async&#x2F;await async await 同步异步 异步</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/" rel="tag">bootstrap</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css3/" rel="tag">css3</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/eslint/" rel="tag">eslint</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/googleapis/" rel="tag">googleapis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/inconfont/" rel="tag">inconfont</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/" rel="tag">jquery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/next/" rel="tag">next</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/offset/" rel="tag">offset</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react-jsx/" rel="tag">react jsx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/setSelectionRange/" rel="tag">setSelectionRange</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tab/" rel="tag">tab</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/three/" rel="tag">three</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/three-js/" rel="tag">three.js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/threejs/" rel="tag">threejs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/uniapp/" rel="tag">uniapp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vscode/" rel="tag">vscode</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vue/" rel="tag">vue</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vuex/" rel="tag">vuex</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/webpack/" rel="tag">webpack</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/whistle-%E4%BB%A3%E7%90%86/" rel="tag">whistle 代理</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%83%E6%AD%8C-%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/" rel="tag">元歌 王者荣耀</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%85%89%E6%A0%87%E4%BD%8D%E7%BD%AE%E6%8F%92%E5%85%A5/" rel="tag">光标位置插入</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E6%A0%87/" rel="tag">图标</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%97%E4%BD%93/" rel="tag">字体</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1SDK/" rel="tag">微信SDK</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag">微信小程序</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A0js/" rel="tag">无js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag">科学上网</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BF%BB%E5%A2%99/" rel="tag">翻墙</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%B7%E6%B1%82%E5%B0%81%E8%A3%85/" rel="tag">请求封装</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%80%89%E9%A1%B9%E5%8D%A1/" rel="tag">选项卡</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/Array/" style="font-size: 13px;">Array</a> <a href="/tags/CSS-CSS3/" style="font-size: 13px;">CSS CSS3</a> <a href="/tags/Hexo/" style="font-size: 13px;">Hexo</a> <a href="/tags/Promise-async-await-async-await-%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E5%BC%82%E6%AD%A5/" style="font-size: 13px;">Promise async/await async await 同步异步 异步</a> <a href="/tags/bootstrap/" style="font-size: 13px;">bootstrap</a> <a href="/tags/css/" style="font-size: 13.33px;">css</a> <a href="/tags/css3/" style="font-size: 13.67px;">css3</a> <a href="/tags/eslint/" style="font-size: 13px;">eslint</a> <a href="/tags/github/" style="font-size: 13px;">github</a> <a href="/tags/googleapis/" style="font-size: 13px;">googleapis</a> <a href="/tags/inconfont/" style="font-size: 13px;">inconfont</a> <a href="/tags/javascript/" style="font-size: 13px;">javascript</a> <a href="/tags/jquery/" style="font-size: 13px;">jquery</a> <a href="/tags/js/" style="font-size: 14px;">js</a> <a href="/tags/next/" style="font-size: 13px;">next</a> <a href="/tags/offset/" style="font-size: 13px;">offset</a> <a href="/tags/react-jsx/" style="font-size: 13px;">react jsx</a> <a href="/tags/setSelectionRange/" style="font-size: 13px;">setSelectionRange</a> <a href="/tags/tab/" style="font-size: 13px;">tab</a> <a href="/tags/three/" style="font-size: 13.67px;">three</a> <a href="/tags/three-js/" style="font-size: 13.67px;">three.js</a> <a href="/tags/threejs/" style="font-size: 13.67px;">threejs</a> <a href="/tags/uniapp/" style="font-size: 13px;">uniapp</a> <a href="/tags/vscode/" style="font-size: 13px;">vscode</a> <a href="/tags/vue/" style="font-size: 13.33px;">vue</a> <a href="/tags/vuex/" style="font-size: 13px;">vuex</a> <a href="/tags/webpack/" style="font-size: 13px;">webpack</a> <a href="/tags/whistle-%E4%BB%A3%E7%90%86/" style="font-size: 13px;">whistle 代理</a> <a href="/tags/%E5%85%83%E6%AD%8C-%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/" style="font-size: 13px;">元歌 王者荣耀</a> <a href="/tags/%E5%85%89%E6%A0%87%E4%BD%8D%E7%BD%AE%E6%8F%92%E5%85%A5/" style="font-size: 13px;">光标位置插入</a> <a href="/tags/%E5%9B%BE%E6%A0%87/" style="font-size: 13px;">图标</a> <a href="/tags/%E5%AD%97%E4%BD%93/" style="font-size: 13px;">字体</a> <a href="/tags/%E5%BE%AE%E4%BF%A1SDK/" style="font-size: 13px;">微信SDK</a> <a href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" style="font-size: 13px;">微信小程序</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 13px;">数组</a> <a href="/tags/%E6%97%A0js/" style="font-size: 13px;">无js</a> <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" style="font-size: 13px;">科学上网</a> <a href="/tags/%E7%BF%BB%E5%A2%99/" style="font-size: 13px;">翻墙</a> <a href="/tags/%E8%AF%B7%E6%B1%82%E5%B0%81%E8%A3%85/" style="font-size: 13px;">请求封装</a> <a href="/tags/%E9%80%89%E9%A1%B9%E5%8D%A1/" style="font-size: 13px;">选项卡</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">十一月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">四月 2021</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a><span class="archive-list-count">13</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/04/21/whistle/" class="title">whistle抓包工具</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-04-21T04:03:36.000Z" itemprop="datePublished">2022-04-21</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/vscode/">vscode</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/01/05/vscode-eslint/" class="title">使用vscode中的eslint插件在非模块化的项目中进行代码提示和格式化</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-01-05T04:54:18.000Z" itemprop="datePublished">2022-01-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/JS/">JS</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/JS/three-js/">three.js</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/11/01/threejs-compress/" class="title">threeJs模型压缩、加载</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-11-01T04:00:00.000Z" itemprop="datePublished">2021-11-01</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/JS/">JS</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/JS/miniapp/">miniapp</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/05/07/requset/" class="title">封装微信小程序请求</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-05-07T02:05:00.000Z" itemprop="datePublished">2021-05-07</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2021/04/16/ulink/" class="title">ACT常用开发套路</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-04-16T06:13:00.000Z" itemprop="datePublished">2021-04-16</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-whistle" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      whistle抓包工具
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/04/21/whistle/" class="article-date">
+	  <time datetime="2022-04-21T04:03:36.000Z" itemprop="datePublished">2022-04-21</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/whistle-%E4%BB%A3%E7%90%86/" rel="tag">whistle 代理</a>
+  </span>
+
+
+        
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2022/04/21/whistle/" class="leancloud_visitors"  data-flag-title="whistle抓包工具">
+			<span class="leancloud-visitors-count">0</span>
+		</span>
+    </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/04/21/whistle/#comments" class="article-comment-link">评论</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 833(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 3(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="为什么要使用"><a href="#为什么要使用" class="headerlink" title="为什么要使用"></a>为什么要使用</h1><ul>
+<li>1、方便在本地模拟修改线上资源</li>
+<li>2、防止正式环境与开发环境代码各种资源路径、接口路径不同，导致上线未修改引用的是本地资源</li>
+<li>3、可以在真机上审查元素，重构问题一目了然</li>
+<li>4、mock数据</li>
+<li>5、待补充</li>
+</ul>
+<h1 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h1><h2 id="安装Whistle【抓包工具】"><a href="#安装Whistle【抓包工具】" class="headerlink" title="安装Whistle【抓包工具】"></a>安装Whistle<code>【抓包工具】</code></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i whistle -g</span><br><span class="line">// 或</span><br><span class="line">yarn add global whistle</span><br></pre></td></tr></table></figure>
+<h2 id="启动whistle"><a href="#启动whistle" class="headerlink" title="启动whistle"></a>启动whistle</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">w2 start</span><br></pre></td></tr></table></figure>
+<h2 id="终端代理"><a href="#终端代理" class="headerlink" title="终端代理"></a>终端代理</h2><p>whistle只是一个抓包工具，他可以拦截并修改请求内容。可以简单的理解为服务端（类似vpn服务器）。<br>有了服务器，你的本机（pc或手机）需要<code>代理</code>(类似于vpn软件)</p>
+<h3 id="pc端代理"><a href="#pc端代理" class="headerlink" title="pc端代理"></a>pc端代理</h3><p>安装Chrome的SwitchyOmega插件 <a href="./Proxy-SwitchyOmega_v2.5.21.zip">点击下载</a><br>按图示配置代理<br><img src="./WX20220420-155500.png" alt="SwitchyOmega插件"><br>当SwitchyOmega插件选择<code>proxy</code>时，即表示代理到whistle抓包工具，选择<code>系统代理</code>时，表示使用系统的vpn等代理，如链接ulinkVPN时，或使用其他vpn时，当选择<code>直接链接</code>时，表示不使用任何代理及vpn，此时使用ulinkVPN无效。</p>
+<h3 id="移动端代理"><a href="#移动端代理" class="headerlink" title="移动端代理"></a>移动端代理</h3><p>移动端无需安装插件，直接将wifi链接至和本机电脑统一局域网的wifi中即可。<br>此时选择链接的wifi，在wifi设置中将代理选项打开，ip地址填写电脑的ip地址，此ip地址也可以在whistle工具中查看，本机电脑打开<a target="_blank" rel="noopener" href="http://127.0.0.1:8899">http://127.0.0.1:8899</a>，点击<code>Online</code>即可看到本机ip地址<br><img src="./WX20220420-160441.png" alt="安全证书"></p>
+<h2 id="安装https证书"><a href="#安装https证书" class="headerlink" title="安装https证书"></a>安装https证书</h2><p>顶部菜单栏点击https勾选如图所示<br><img src="./WX20220420-160811.png" alt="本机ip"><br>终端已经配置好代理的情况下：</p>
+<ul>
+<li>移动端扫码下载安装安全证书</li>
+<li>pc端点击<code>Download RootCA</code>（安装选项自行百度）</li>
+<li>或直接<a href="./rootCA.crt">点击下载</a><br>ios端需要注意的是，安装好证书后，需要在<code>通用</code>-<code>关于本机</code>-<code>证书信任设置</code>中打开whistle.XXXXXXXXXX<h2 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h2>此时已经可以进行http和https的抓包了，在network中可以看到被代理的设备发出的http请求，以及请求的参数，返回的内容。<br><img src="./WX20220420-161644.png" alt="network"><h2 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h2>如何将线上的资源使用本地资源代替？<br>在<code>rules</code>中配置规则，一下时候简单的几种规则<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tencent.com 127.0.0.1 # oa.7jing.com域名下所有资源代理到本地ip，类似于配置hosts</span><br><span class="line">https://tencent.com http://127.0.0.1 # 将https的线上地址代理到没有https的本地环境</span><br><span class="line">https://tencent.com https://localhost:8888 # 将线上地址代理到特殊端口的本地环境</span><br><span class="line">https://tencent.com/app.js D://doc/app.js # 将线上某个文件代理到本地文件</span><br></pre></td></tr></table></figure>
+<h2 id="微信内审查元素"><a href="#微信内审查元素" class="headerlink" title="微信内审查元素"></a>微信内审查元素</h2>使用<code>vconsole</code>虽然能查看大部分页面dom，请求等，但是无法直观的看到某个重构页面的dom具体位置，大小，内外边距等。<br>使用Whistle整合的weinre即可在电脑端审查移动设备的dom元素。<br>首先在<code>rules</code>中配置<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://* weinre:// # 表示将所有https请求通过weinre工具抓包，也可设置单独的域名或页面</span><br></pre></td></tr></table></figure>
+打开顶部导航中的<code>Weinre</code>即可看到移动设备中打开的页面地址，点击地址后再点击顶部菜单中红的Elements即可查看移动设备中的dom节点。<br><img src="./WX20220420-163049.png" alt="Weinre"><br><img src="./WX20220420-163213.png" alt="Weinre"><h2 id="mock数据"><a href="#mock数据" class="headerlink" title="mock数据"></a>mock数据</h2>Whistle可以安装各种插件，mock数据可以安装<code>vase</code><br>具体用法自行百度吧！</li>
+</ul>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://hakunamatata052.github.io/2022/04/21/whistle/" title="whistle抓包工具" target="_blank" rel="external">https://hakunamatata052.github.io/2022/04/21/whistle/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://www.cxy2icu.com" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://www.cxy2icu.com" target="_blank"><span class="text-dark">程序园-ICU</span><small class="ml-1x">程序猿的重点-ICU!</small></a></h3>
+        <div>一只前端小神的Blog</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    
+    <li class="next">
+      <a href="/2022/01/05/vscode-eslint/" title="使用vscode中的eslint插件在非模块化的项目中进行代码提示和格式化"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢您的支持，我会继续努力的!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/alipay.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/wechatpay.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/hakunamatata052" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="https://weibo.com/534104568/" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'Ct0xaDMu3tNhSuGrKCb9Ce3W-gzGzoHsz',
+    appKey: 'mwEuQ4iFFyDDoChwRnw0Bfdu',
+    placeholder: '说点什么',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: true
+  });
+  </script>
+
+     
+
+
+
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/assets/hijiki.model.json"},"display":{"superSample":2,"width":220,"height":300,"position":"left","hOffset":0,"vOffset":50},"mobile":{"show":true,"scale":1},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body>
+</html>
