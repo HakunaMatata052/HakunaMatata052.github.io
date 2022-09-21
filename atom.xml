@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hakunamatata052.github.io/"/>
-  <updated>2022-06-06T08:55:09.008Z</updated>
+  <updated>2022-09-21T04:12:28.789Z</updated>
   <id>https://hakunamatata052.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一行命令删除项目内所有node_modules依赖文件夹</title>
+    <link href="https://hakunamatata052.github.io/2022/09/21/remove-node_modules/"/>
+    <id>https://hakunamatata052.github.io/2022/09/21/remove-node_modules/</id>
+    <published>2022-09-21T04:10:00.000Z</published>
+    <updated>2022-09-21T04:12:28.789Z</updated>
+    
+    <content type="html"><![CDATA[<p>cd到需要删除的目录后执行<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name &quot;node_modules&quot; -type d -prune -exec rm -rf &#x27;&#123;&#125;&#x27; +</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;cd到需要删除的目录后执行&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;
+      
+    
+    </summary>
+    
+      <category term="JS" scheme="https://hakunamatata052.github.io/categories/JS/"/>
+    
+    
+      <category term="node_modules" scheme="https://hakunamatata052.github.io/tags/node-modules/"/>
+    
+  </entry>
   
   <entry>
     <title>face-api.js的基本使用方法</title>
@@ -529,33 +554,6 @@
     
       <category term="日常" scheme="https://hakunamatata052.github.io/categories/%E6%97%A5%E5%B8%B8/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用fonts.googleapis.com使自己的网站增加更多字体</title>
-    <link href="https://hakunamatata052.github.io/2019/01/02/fonts-googleapis/"/>
-    <id>https://hakunamatata052.github.io/2019/01/02/fonts-googleapis/</id>
-    <published>2019-01-02T09:04:17.000Z</published>
-    <updated>2022-01-05T07:51:52.318Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先，fonts.googleapis.com解决的是客户端电脑没有安装字体，但是网站主又想客户看到自己想要的字体，通常的做法就是网站的css调用网站内部的字体文件，但是这样做非常不灵活，我们需要更换字体时，不然需要修改css，还需要替换字体文件，于是fonts.googleapis.com就可以解决这个问题。</p><h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>CSS引入<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">&quot;//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&amp;subset=latin,latin-ext&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure><br>链接的具体构成就是：<br>fonts.googleapis.com/css?family=<strong>字体名称</strong>:<strong>加粗程度</strong>,<strong>加粗程度+是否斜体</strong>&amp;subset=latin,latin-ext<br>其中如果需要多种字体用  <strong>|</strong>  隔开，如果有多种加粗程度<br>最后在需要使用的元素上加入font-family属性即可<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;Monda&#x27;</span>, <span class="string">&#x27;PT Mono&#x27;</span> , serif;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">48px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><blockquote><p>fonts.googleapis.com还有一种ajax请求方式，这里不推荐使用，css是最快也最容易维护的方式。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;首先，fonts.googleapis.com解决的是客户端电脑没有安装字体，但是网站主又想客户看到自己想要的字体，通常的做法就是网站的css调用网站内部的字体文件，但是这样做非常不灵活，我们需要更换字体时，不然需要修改css，还需要替换字体文件，于是fonts.googl
-      
-    
-    </summary>
-    
-      <category term="HTML" scheme="https://hakunamatata052.github.io/categories/HTML/"/>
-    
-    
-      <category term="googleapis" scheme="https://hakunamatata052.github.io/tags/googleapis/"/>
-    
-      <category term="字体" scheme="https://hakunamatata052.github.io/tags/%E5%AD%97%E4%BD%93/"/>
     
   </entry>
   
