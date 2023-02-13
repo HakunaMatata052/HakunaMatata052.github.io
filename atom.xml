@@ -150,6 +150,58 @@
   </entry>
   
   <entry>
+    <title>让不同网站访问不同域名时使用不同的代理(clashX)</title>
+    <link href="https://hakunamatata052.github.io/2022/02/13/clashX-config.xml/"/>
+    <id>https://hakunamatata052.github.io/2022/02/13/clashX-config.xml/</id>
+    <published>2022-02-13T12:36:12.000Z</published>
+    <updated>2023-02-13T12:51:12.831Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在使用vpn时，可能会有这样一个需求：<br>访问youtube(境外站点)时，使用美国节点<br>访问百度(境内站点)时，不使用代理（直连）<br>访问公司内部站点时，使用公司搭建的代理节点  </p><p>但是普通的vpn很多都无法做到这点，例如之前用过的trojan-qt5，他只能每次访问不同网站时手动切换节点，这样做显然太麻烦了。</p><h1 id="使用clashX"><a href="#使用clashX" class="headerlink" title="使用clashX"></a>使用clashX</h1><p>这里推荐时用clashX（max）或clash for windows（windows），因为这款然间可以通过配置规则来实现不同站点使用不同节点。<br>首先打开配置文件，这要看你具体使用的是那个套配置文件，可以点开配置，查看那个配置是生效的，然后点击<code>打开配置文件夹</code>，编辑生效的那套配置<br>然后找到后面的规则，具体的规则如下<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">proxies:</span></span><br><span class="line">  <span class="bullet">-</span> </span><br><span class="line">    <span class="attr">name:</span> <span class="string">节点名称</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">ssr</span></span><br><span class="line">    <span class="attr">server:</span> <span class="string">公司vpn的ip</span></span><br><span class="line">    <span class="attr">port:</span> <span class="string">公司vpn的端口号</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">公司vpn的密码</span></span><br><span class="line">    <span class="attr">cipher:</span> <span class="string">aes-256-cfb</span>  <span class="comment"># 加密方式</span></span><br><span class="line">    <span class="attr">plugin:</span> <span class="string">obfs</span></span><br><span class="line">    <span class="attr">obfs:</span> <span class="string">plain</span>  <span class="comment"># 混淆模式</span></span><br><span class="line">    <span class="attr">protocol:</span> <span class="string">origin</span>  <span class="comment">#协议</span></span><br><span class="line">    <span class="attr">tls:</span> <span class="literal">true</span> <span class="comment"># https</span></span><br><span class="line">    <span class="attr">skip-cert-verify:</span> <span class="literal">true</span></span><br><span class="line">  <span class="bullet">-</span> </span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,公司域名,节点名称</span></span><br></pre></td></tr></table></figure><br>剩余的规则可以不变，这样可以让境外网站自动使用代理，而国内域名不使用。</p><blockquote><p>虽然公司搭建的vpn使用的是http协议，但是这里的type不能写http，要写ssr，这个官方文档里也没有写问原因，只能靠自己一点一点试。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;我们在使用vpn时，可能会有这样一个需求：&lt;br&gt;访问youtube(境外站点)时，使用美国节点&lt;br&gt;访问百度(境内站点)时，不使用代理（
+      
+    
+    </summary>
+    
+      <category term="vpn clashX" scheme="https://hakunamatata052.github.io/categories/vpn-clashX/"/>
+    
+    
+      <category term="vpn" scheme="https://hakunamatata052.github.io/tags/vpn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode中替换的小技巧-替换含有变量</title>
+    <link href="https://hakunamatata052.github.io/2022/01/11/vscode-replace/"/>
+    <id>https://hakunamatata052.github.io/2022/01/11/vscode-replace/</id>
+    <published>2022-01-11T07:46:00.000Z</published>
+    <updated>2023-01-11T08:09:37.161Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>在做小程序是，经常会遇到从其他地方复制过来的样式，单位是px，如spritecow精灵图选择工具，这里只是单位不同，数值是不需要改的<br>比如这段样式<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.sprite</span> &#123;</span><br><span class="line"><span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">&#x27;imgs/sp.png&#x27;</span>) no-repeat -<span class="number">19px</span> -<span class="number">380px</span>;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">404px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">74px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>放在小程序的wxss中应该是<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.sprite</span> &#123;</span><br><span class="line"><span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">&#x27;imgs/sp.png&#x27;</span>) no-repeat -<span class="number">19</span>rpx -<span class="number">380</span>rpx;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">404</span>rpx;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">74</span>rpx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>我们只需要替换后面的单位，而不需要转换数值，这个时候可以使用node库 <code>any2rem</code>，但是这样做显然太麻烦。<br>当然如果页面中只有需要将<code>px</code>，使用vscode或其他ide自带的批量替换<code>px</code> 为<code>rpx</code>完全没问题。<br>但是如果这个时候页面中已经有很多写好的小程序样式，比如<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">750</span>rpx;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">1624</span>rpx;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line"><span class="selector-class">.sprite</span> &#123;</span><br><span class="line"><span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">&#x27;imgs/sp.png&#x27;</span>) no-repeat -<span class="number">19px</span> -<span class="number">380px</span>;</span><br><span class="line"><span class="attribute">width</span>: <span class="number">404px</span>;</span><br><span class="line"><span class="attribute">height</span>: <span class="number">74px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>这个时候使用批量替换就有问题了会将已经写好的css中的样式替换成<code>750rrpx</code>,这个时候你又得再将<code>rrxp</code>再替换成<code>rpx</code><br>这样做就太呆了，其实可以使用vscode的正则替换<br><img src="./20230111-155543.png" alt="跳过断点"><br>批量替换是点选<code>.*</code>打开正则模式，然后再<code>查找</code>输入框里写正则表达式，这里需要将数字部分用圆括号括起来，因为数字这部分不能替换成一个值，要根据替换前的值原封不等的替换回去，圆括号里就相当于保存了一个变量<br>在替换输入框里写上<code>$1rpx</code><br>这里的<code>$1</code>即表示查找输入框里被括号包裹的变量，当然如果不止一个变量，还可以使用多个括号，同理从左到右依次是<code>$1</code>,<code>$2</code>,<code>$3</code> … </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h1&gt;&lt;p&gt;在做小程序是，经常会遇到从其他地方复制过来的样式，单位是px，如spritecow精灵图选择工具，这里只是单位不同，数值是不需要改的&lt;br&gt;
+      
+    
+    </summary>
+    
+      <category term="vscode" scheme="https://hakunamatata052.github.io/categories/vscode/"/>
+    
+    
+      <category term="vscode" scheme="https://hakunamatata052.github.io/tags/vscode/"/>
+    
+      <category term="字符替换" scheme="https://hakunamatata052.github.io/tags/%E5%AD%97%E7%AC%A6%E6%9B%BF%E6%8D%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用vscode中的eslint插件在非模块化的项目中进行代码提示和格式化</title>
     <link href="https://hakunamatata052.github.io/2022/01/05/vscode-eslint/"/>
     <id>https://hakunamatata052.github.io/2022/01/05/vscode-eslint/</id>
@@ -504,60 +556,6 @@
     
     
       <category term="CSS CSS3" scheme="https://hakunamatata052.github.io/tags/CSS-CSS3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>科学上网（翻墙）神器【蓝灯】</title>
-    <link href="https://hakunamatata052.github.io/2019/01/21/lantern/"/>
-    <id>https://hakunamatata052.github.io/2019/01/21/lantern/</id>
-    <published>2019-01-21T01:08:46.000Z</published>
-    <updated>2022-01-05T07:51:52.364Z</updated>
-    
-    <content type="html"><![CDATA[<p>给大家介绍一款免费限制流量的科学上网神器<strong>蓝灯lantren</strong><br>下载地址：<a href="https://github.com/HakunaMatata052/lantern-binaries">Github</a><br>里面包含Windows，Android，macOS三个版本。<br>点击对应拓展名文件进入下载即可</p><h2 id="以Windows为例"><a href="#以Windows为例" class="headerlink" title="以Windows为例"></a>以Windows为例</h2><p>点击3.0最新版的exe文件<br><img src="/2019/01/21/lantern/01.png" class=""></p><p>点击download下载<br></p><p>下载先来后双击安装即可。<br><img src="/2019/01/21/lantern/03.jpg" class=""><br>速度还可以~~</p><p>每个月有500MB的免费流量，可以升级到专业版，不限制流量。<br>博主500MB基本足够。<br>而且他采用的是只能切换线路，如果访问的是国内站点，是不通过VPN的，也不会消耗流量。只有当你访问被墙网站的时候才会切换vpn线路。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;给大家介绍一款免费限制流量的科学上网神器&lt;strong&gt;蓝灯lantren&lt;/strong&gt;&lt;br&gt;下载地址：&lt;a href=&quot;https://github.com/HakunaMatata052/lantern-binaries&quot;&gt;Github&lt;/a&gt;&lt;br&gt;里面包含Wi
-      
-    
-    </summary>
-    
-    
-      <category term="科学上网" scheme="https://hakunamatata052.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-      <category term="翻墙" scheme="https://hakunamatata052.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一句代码解决bootstrap栅格几个设置5等分</title>
-    <link href="https://hakunamatata052.github.io/2019/01/04/bootstrap-offset/"/>
-    <id>https://hakunamatata052.github.io/2019/01/04/bootstrap-offset/</id>
-    <published>2019-01-04T07:45:01.000Z</published>
-    <updated>2020-08-21T02:57:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>HTML<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;row&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;col-xs-offset-1 col-xs-2 text-center&quot;</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;col-xs-2 text-center&quot;</span>&gt;</span>香蕉<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;col-xs-2 text-center&quot;</span>&gt;</span>番茄<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;col-xs-2 text-center&quot;</span>&gt;</span>石榴<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;col-xs-2 text-center&quot;</span>&gt;</span>芒果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><br>正常设置每个栅格2等分，最后会在末尾空余出2等分（共12等分），然后第一个栅格设置col-xs-offset-1，意思是偏移一格，等于把最后的2等分其中一份放在最前面了。<br>这样做可以解决bootstrap栅格5等分的问题，但是最终宽度会比正常窄，可以单独设置container的宽来解决。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;HTML&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="HTML" scheme="https://hakunamatata052.github.io/categories/HTML/"/>
-    
-      <category term="BOOTSTRAP" scheme="https://hakunamatata052.github.io/categories/HTML/BOOTSTRAP/"/>
-    
-    
-      <category term="bootstrap" scheme="https://hakunamatata052.github.io/tags/bootstrap/"/>
-    
-      <category term="offset" scheme="https://hakunamatata052.github.io/tags/offset/"/>
     
   </entry>
   
