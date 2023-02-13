@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hakunamatata052.github.io/"/>
-  <updated>2023-02-13T13:09:45.938Z</updated>
+  <updated>2023-02-13T13:14:00.734Z</updated>
   <id>https://hakunamatata052.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>让不同网站访问不同域名时使用不同的代理(clashX)</title>
+    <title>让vpn访问不同域名时使用不同的代理(clashX)</title>
     <link href="https://hakunamatata052.github.io/2023/02/13/clashX-config/"/>
     <id>https://hakunamatata052.github.io/2023/02/13/clashX-config/</id>
     <published>2023-02-13T12:36:12.000Z</published>
-    <updated>2023-02-13T13:09:45.938Z</updated>
+    <updated>2023-02-13T13:14:00.734Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>我们在使用vpn时，可能会有这样一个需求：<br>访问youtube(境外站点)时，使用美国节点<br>访问百度(境内站点)时，不使用代理（直连）<br>访问公司内部站点时，使用公司搭建的代理节点  </p><p>但是普通的vpn很多都无法做到这点，例如之前用过的trojan-qt5，他只能每次访问不同网站时手动切换节点，这样做显然太麻烦了。</p><h1 id="使用clashX"><a href="#使用clashX" class="headerlink" title="使用clashX"></a>使用clashX</h1><p>这里推荐时用clashX（max）或clash for windows（windows），因为这款然间可以通过配置规则来实现不同站点使用不同节点。<br>首先打开配置文件，这要看你具体使用的是那个套配置文件，可以点开配置，查看那个配置是生效的，然后点击<code>打开配置文件夹</code>，编辑生效的那套配置<br>然后找到后面的规则，具体的规则如下<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">proxies:</span></span><br><span class="line">  <span class="bullet">-</span> </span><br><span class="line">    <span class="attr">name:</span> <span class="string">节点名称</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">ssr</span></span><br><span class="line">    <span class="attr">server:</span> <span class="string">公司vpn的ip</span></span><br><span class="line">    <span class="attr">port:</span> <span class="string">公司vpn的端口号</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">公司vpn的密码</span></span><br><span class="line">    <span class="attr">cipher:</span> <span class="string">aes-256-cfb</span>  <span class="comment"># 加密方式</span></span><br><span class="line">    <span class="attr">obfs:</span> <span class="string">plain</span>  <span class="comment"># 混淆模式</span></span><br><span class="line">    <span class="attr">protocol:</span> <span class="string">origin</span>  <span class="comment">#协议</span></span><br><span class="line">    <span class="attr">tls:</span> <span class="literal">true</span> <span class="comment"># https</span></span><br><span class="line">    <span class="attr">skip-cert-verify:</span> <span class="literal">true</span></span><br><span class="line">  <span class="bullet">-</span> </span><br><span class="line"><span class="attr">rules:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">DOMAIN-SUFFIX,公司域名,节点名称</span></span><br></pre></td></tr></table></figure><br>剩余的规则可以不变，这样可以让境外网站自动使用代理，而国内域名不使用。</p><blockquote><p>虽然公司搭建的vpn使用的是http协议，但是这里的type不能写http，要写ssr，这个官方文档里也没有写问原因，只能靠自己一点一点试。</p></blockquote>]]></content>
     

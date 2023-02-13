@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[让不同网站访问不同域名时使用不同的代理(clashX)]]></title>
+    <title><![CDATA[让vpn访问不同域名时使用不同的代理(clashX)]]></title>
     <url>%2F2023%2F02%2F13%2FclashX-config%2F</url>
     <content type="text"><![CDATA[前言我们在使用vpn时，可能会有这样一个需求：访问youtube(境外站点)时，使用美国节点访问百度(境内站点)时，不使用代理（直连）访问公司内部站点时，使用公司搭建的代理节点 但是普通的vpn很多都无法做到这点，例如之前用过的trojan-qt5，他只能每次访问不同网站时手动切换节点，这样做显然太麻烦了。 使用clashX这里推荐时用clashX（max）或clash for windows（windows），因为这款然间可以通过配置规则来实现不同站点使用不同节点。首先打开配置文件，这要看你具体使用的是那个套配置文件，可以点开配置，查看那个配置是生效的，然后点击打开配置文件夹，编辑生效的那套配置然后找到后面的规则，具体的规则如下123456789101112131415proxies: - name: 节点名称 type: ssr server: 公司vpn的ip port: 公司vpn的端口号 password: 公司vpn的密码 cipher: aes-256-cfb # 加密方式 obfs: plain # 混淆模式 protocol: origin #协议 tls: true # https skip-cert-verify: true - rules: - DOMAIN-SUFFIX,公司域名,节点名称剩余的规则可以不变，这样可以让境外网站自动使用代理，而国内域名不使用。 虽然公司搭建的vpn使用的是http协议，但是这里的type不能写http，要写ssr，这个官方文档里也没有写问原因，只能靠自己一点一点试。]]></content>
       <categories>
